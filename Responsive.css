@@ -3,33 +3,27 @@
     background-color: #002939;
     margin:0;
     font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size:1.2rem;
   }
-
-  body, ul, li, p{margin: 0px;
-  padding: 0px;
-  list-style: none;
-  font-size:1.2rem;}
 
   a{text-decoration: none;
   color: white;}
 
-  .header{display: flex;
-  justify-content:space-between;
-  align-items: center;
+  .nav{
+  display: flex;
+  justify-content:space-around;
   padding:20px;
   background-color: rgba(255, 255, 255, .15);
   backdrop-filter: blur(5px);}
 
-  .nav{
-    display: flex;
-    flex-direction: row;
-  }
-
   .Contenitore {
     display: flex;
     flex-direction: row;
-    margin-top: 10%;
     justify-content: center;
+    margin-top:10%;
   }
 
   .Uno {
@@ -59,14 +53,41 @@
     padding: 12px 16px;
     cursor: pointer;
   }
+
+  #git{font-size: 30px;}
+
+  #food{font-size: 30px;}
+
+  #user{font-size: 30px;}
+
+  #setting{font-size:30px;
+  margin-right:0px;}
 }
 
 @media screen and (max-width: 820px) {
   body {
     background-color: #002939;
-    margin: 0;
+    margin:0;
     font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size:1.2rem;
   }
+
+  a{text-decoration: none;
+  color: white;}
+
+  .nav{
+  position: fixed;
+  bottom:0;
+  z-index: 1;
+  width:100%;
+  display: flex;
+  justify-content:space-evenly;
+  padding:20px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);}
 
   .Contenitore {
     display: flex;
@@ -102,5 +123,15 @@
     padding: 12px 16px;
     cursor: pointer;
   }
+
+  #git{font-size: 30px;}
+
+  #food{font-size: 30px;}
+
+  #user{font-size: 30px;}
+
+  #setting{font-size:30px;
+  margin-right:30px;}
 }
+  
 
