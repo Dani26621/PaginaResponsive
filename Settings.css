@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+@media screen and (max-width: 2564px) {
+  body {
+    background-color: #002939;
+    margin:0;
+    font-family: 'Outfit', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size:1.2rem;
+  }
+
+  a{text-decoration: none;
+  text-align:center;
+  font-size:16px;
+  color: white;}
+
+  .nav{
+  display: flex;
+  justify-content:space-around;
+  padding:16px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  box-shadow: 3px 0px 20px white;
+  margin-bottom:40px;}
+
+  #home,#food,#user{font-size: 30px;}
+  
+  #setting{font-size: 30px;
+  color:#549da0;}
+
+  #home:hover{color:#549da0;}
+  #food:hover{color:#549da0;}
+  #user:hover{color:#549da0;}
+  #setting:hover{color:#549da0;}
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-color: #002939;
+    margin:0;
+    font-family:'Outfit', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size:1.2rem;
+  }
+
+  a{text-decoration: none;
+  text-align:center;
+  color: white;}
+
+  .nav{
+  display: flex;
+  justify-content:space-around;
+  padding:14px;
+  background-color: rgba(255, 255, 255, .15);
+  backdrop-filter: blur(5px);
+  margin-bottom:40px;}
+
+  #home,#food,#user,#setting{font-size: 25px;}
+
+  #home:hover{color:#549da0;}
+  #food:hover{color:#549da0;}
+  #user:hover{color:#549da0;}
+  #setting:hover{color:#549da0;}
+}
+
+@media screen and (max-width: 820px) {
+  body {
+    background-color: #002939;
+    margin:0;
+    font-family: 'Outfit', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size:1.2rem;
+  }
+
+  a{text-decoration: none;
+  text-align:center;
+  color: white;}
+
+  #home,#food,#user,#setting{font-size: 23px;}
+
+  #NomeH,#NomeO,#NomeA,#NomeS{font-size:12px;}
+
+  .nav{
+  position: fixed;
+  bottom:0;
+  z-index: 1;
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content:space-around;
+  padding:12px;
+  background-color: rgb(29, 29, 31);
+  box-shadow:none;
+  margin-bottom:0px;}
+
+  .test{width:90%;
+   display:block;}
+
+  .Contenitore{display:grid;
+   width:-webkit-fill-available;
+   background-color: rgba(255, 255, 255, .15);
+   backdrop-filter: blur(5px);
+   border-radius:10px;}
+
+   h1{text-align:left;
+    margin-top:20px;
+   color: white;}
+
+   .Generali{display:flex;
+    align-items:center;
+    color:white;
+    border-bottom:1px solid grey;}
+
+    .Generali div{background-color:grey;
+    border-radius:5px;
+    padding:2px;
+    margin-right:15px;
+    margin-left:15px;
+    font-size:25px;}
+
+    .Contattaci{display:flex;
+    align-items:center;
+    color:white;
+    border-bottom:1px solid grey;}
+
+    .Contattaci div{background-color: rgb(58, 192, 58);
+    border-radius:5px;
+    padding:2px;
+    margin-right:15px;
+    margin-left:15px;
+    font-size:25px;}
+
+    .Valutaci{display:flex;
+    align-items:center;
+    color:white;
+    border-bottom:1px solid grey;}
+    
+    .Valutaci div{background-color: lightsalmon;
+    color:yellow;
+    border-radius:5px;
+    padding:2px;
+    margin-right:15px;
+    margin-left:15px;
+    font-size:25px;}   
+
+    .Versione{display:flex;
+    align-items:center;
+    color:white;}
+        
+    .Versione div{background-color: white;
+    color:#0a7aff;
+    border-radius:5px;
+    padding:2px;
+    margin-right:15px;
+    margin-left:15px;
+    font-size:25px;}   
+
+    p{font-size:17px;}
+
+    #frecciaD{margin-left:auto;
+    margin-right:15px;}
+
+
+    .DentroVersione{display:none;
+    width:90%;}
+
+    .Indietro{display:flex;
+    justify-content:left;
+    align-items:center;
+    color:#0a7aff}
+
+    .Descrizione{display:grid;
+    justify-content:center;
+    width:-webkit-fill-available;
+    padding:10px;
+    border-radius:10px;
+    color:white;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);}
+
+    .Descrizione img{width:100%;}
+
+    #FrecciaS{font-size:25px;
+    color:#0a7aff}
+}
+  

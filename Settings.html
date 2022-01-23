@@ -1,0 +1,115 @@
+<meta name="viewport" content="width=device-width, 
+initial-scale=1.0">  
+
+<html>
+    <head>
+        <title>Pagina responsive</title>
+        <link rel="icon" href="https://img.icons8.com/color/100/00000/sandwich.png">
+        <link rel="stylesheet" type="text/css" href="Settings.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="nav">
+            <a href="file.html"><ion-icon name="home" id ="home"></ion-icon><br><b id="NomeH">home</b></a>
+            <a href=""><ion-icon name="fast-food" id="food" ></ion-icon><br><b id="NomeO">ordini</b></a>
+            <a href=""><ion-icon name="person" id="user"></ion-icon><br><b id="NomeA">account</b></a>
+            <a href="Settings.html"><ion-icon name="settings" id="setting"></ion-icon><br><b id="NomeS">settings</b></a>
+        </nav>
+
+        <center>
+            <diV class="test" id="test">
+
+                <h1>Impostazioni</h1>
+
+                <div class="Contenitore">
+
+                    <div class="Generali">
+                        <div>
+                            <ion-icon name="cog-sharp"></ion-icon>
+                        </div>
+                        <p>Generali</p>
+                        <ion-icon name="chevron-forward-sharp" id="frecciaD"></ion-icon>
+                    </div>
+    
+                    <div class="Contattaci">
+                        <div>
+                            <ion-icon name="chatbubbles-sharp"></ion-icon>
+                        </div>
+                        <p>Contattaci</p>
+                        <ion-icon name="chevron-forward-sharp" id="frecciaD"></ion-icon>
+                    </div>
+    
+                    <div class="Valutaci">
+                        <div>
+                            <ion-icon name="star-sharp"></ion-icon>
+                        </div>
+                        <p>Valutaci</p>
+                        <ion-icon name="chevron-forward-sharp" id="frecciaD"></ion-icon>
+                    </div>
+    
+                    <div class="Versione" onclick="EntraVersione()">
+                        <div>
+                            <ion-icon name="cloud-download-sharp"></ion-icon>
+                        </div>
+                        <p>Versione</p>
+                        <ion-icon name="chevron-forward-sharp" id="frecciaD"></ion-icon>
+                    </div>
+    
+                </div>
+
+            </diV>
+        </center>
+
+        <center>
+            <div class="DentroVersione" id="Versione">
+
+                <div class="Indietro" onclick="EsciVersione()">
+                    <ion-icon name="chevron-back-sharp" id="FrecciaS"></ion-icon>
+                    <p>Impostazioni</p>
+                </div>
+
+                <div class="Descrizione">
+                    <img src="Versione.png">
+                    <p>La verisone attuale della webapp è la 1.0!</p>
+                </div>
+            </div>
+        </center>
+
+        <script>
+            var Test = document.getElementById("test");
+            var Versione = document.getElementById("Versione");
+            function EntraVersione(){
+
+                if (Test.style.display == "block"){
+                    Test.style.display = "none";  
+                    Versione.style.display = "block";
+                }
+                else                
+                Test.style.display = "none";
+                Versione.style.display = "block";   
+            }
+
+            function EsciVersione(){
+
+                if (Test.style.display == "none"){
+                    Test.style.display = "block";  
+                    Versione.style.display = "none";
+                }
+                else                
+                Test.style.display = "block";
+            }
+        </script>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+        <script>
+        </script>
+    
+    </body>
+</html>
