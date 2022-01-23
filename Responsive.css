@@ -103,7 +103,10 @@
     margin-top: 40px;
   }
 
-  #home,#food,#user,#setting{font-size: 30px;}
+  #home{font-size: 30px;
+  color:#549da0;}
+  
+  #food,#user,#setting{font-size: 30px;}
 
   #home:hover{color:#549da0;}
   #food:hover{color:#549da0;}
@@ -343,6 +346,8 @@
     margin-bottom:90px;
   }
 
-  #home,#food,#user,#setting{font-size: 23px;}
+  #home{font-size:23px;
+  color:#549da0;}
+
+  #food,#user,#setting{font-size: 23px;}
 }
-  
