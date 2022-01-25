@@ -13,7 +13,7 @@
 
   a{text-decoration: none;
   text-align:center;
-  font-size:22px;
+  font-size:20px;  
   color: white;}
 
   .nav{
@@ -208,6 +208,10 @@
 
   p{font-size:17px;}
 
+  h5{font-size: 15px;}
+
+  h4{font-size: 18px;}
+
   button {
     display: inline-block;
     color: white;
@@ -321,6 +325,10 @@
   }
 
   p{font-size:17px;}
+
+  h5{font-size: 15px;}
+
+  h4{font-size: 18px;}
 
   button {
     display: inline-block;
@@ -449,6 +457,10 @@
   }
 
   p{font-size:17px;}
+
+  h5{font-size: 15px;}
+
+  h4{font-size: 18px;}
 
   button {
     display: inline-block;
