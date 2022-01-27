@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 2564px) {
   body {
-    background-color: #002939;
+    background-color: white;
     margin:0;
     font-family: 'Outfit', sans-serif;
     margin: 0px;
@@ -16,22 +16,30 @@
   font-size:20px;
   color: white;}
 
-  .nav{
+  .nav{position:fixed;
+  z-index:1;
+  width:-webkit-fill-available;
   display: flex;
   justify-content:space-around;
-  padding:16px;
-  background-color: rgba(255, 255, 255, .15);
-  backdrop-filter: blur(5px);
-  box-shadow: 3px 0px 20px white;
-  margin-bottom:40px;}
+  align-items: center;
+  padding: 16px;
+  background-color: rgba(29, 29, 31, 0.938);}
 
-  .intestazione{display: flex;
+  .img{
+  margin-top:140px;}
+
+  .sfondo{background-color:#edeef0;
+  box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);}
+
+  .intestazione1{display: flex;
   justify-content:center;
   align-items:center;
   color:white;
-  margin:0px;
-  margin-top:20px;}
-    
+  margin-top:0px;
+  margin-bottom:4px;}
+
+  .intestazione2{display: none;}
+
   .NomeLogo{display:grid;
   justify-content:center;
   height:80px;}
@@ -49,7 +57,7 @@
   .Notizie{
     display: flex;
     justify-content:left;
-    color:white;
+    color:#598596;;
   }
 
   .Notizie h1{margin-bottom:10px;
@@ -65,14 +73,13 @@
     width: 33%;
     height: 320px;
     margin-top: 0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px white;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;;
   }
 
   .Due {
@@ -81,28 +88,26 @@
     margin-right: 20px;
     margin-left:20px;
     margin-top: 0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px white;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;;
   }
 
   .Tre {
     width: 33%;
     height: 320px;
     margin-top: 0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px white;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;;
   }
 
   p{font-size:19px;}
@@ -115,19 +120,20 @@
     display: inline-block;
     color: white;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 27px;
     background: #549da0;
     border: none;
     border-radius: 5px;
     padding: 12px 16px;
     cursor: pointer;
     margin-top: 40px;
+    margin-bottom:90px;
   }
 
-  #home{font-size: 36px;
+  #home{font-size: 40px;
   color:#549da0;}
   
-  #food,#user,#setting{font-size: 36px;}
+  #food,#user,#setting{font-size: 40px;}
 
   #home:hover{color:#549da0;}
   #food:hover{color:#549da0;}
@@ -137,7 +143,7 @@
 
 @media screen and (max-width: 1540px) {
   body {
-    background-color: #002939;
+    background-color: white;
     margin:0;
     font-family: 'Outfit', sans-serif;
     margin: 0px;
@@ -151,30 +157,39 @@
   font-size:16px;
   color: white;}
 
-  .nav{
+  .nav{position: fixed;
+  z-index: 1;
+  width:-webkit-fill-available;
   display: flex;
   justify-content:space-around;
-  padding:16px;
-  background-color: rgba(255, 255, 255, .15);
-  backdrop-filter: blur(5px);
-  box-shadow: 3px 0px 20px white;
-  margin-bottom:40px;}
+  align-items:center;
+  background-color: rgba(29, 29, 31, 0.938);
+  padding:0px;}
 
-  .intestazione{display: flex;
-    justify-content:center;
-    align-items:center;
-    color:white;
-    margin-top:20px;}
+  .img{width:500px;
+  margin-top:100px;}
+
+  .intestazione1{display: flex;
+  justify-content:center;
+  align-items:center;
+  color:white;;
+  margin-top:0px;
+  margin-bottom:4px;}
+
+  .intestazione2{display: none;}    
     
-    .NomeLogo{display:grid;
-    justify-content:center;
-    height:80px;}
+  .NomeLogo{display:grid;
+  justify-content:center;
+  height:80px;}
     
-    .Nomelogo h1{margin:0px;
-    font-size: 38px;}
+  .Nomelogo h1{margin:0px;
+  font-size: 38px;}
       
-    .Nomelogo p{margin:0px;
-    font-size: 17px;}
+  .Nomelogo p{margin:0px;
+  font-size: 17px;}
+
+  .sfondo{background-color:#edeef0;
+  box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);}
 
   .test{display:flex;
   flex-direction: column;
@@ -183,7 +198,7 @@
   .Notizie{
     display: flex;
     justify-content:left;
-    color:white;
+    color:#598596;
   }
 
   .Notizie h1{margin-bottom:10px;
@@ -199,14 +214,14 @@
     width: 405px;
     height: 280px;
     margin-top: 0px;
-    background-color: rgba(255, 255, 255, .15);
+    background-color: white;
     backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px white; 
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;
   }
 
   .Due {
@@ -215,28 +230,26 @@
     margin-right: 20px;
     margin-left:20px;
     margin-top: 0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px white;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;
   }
 
   .Tre {
     width: 405px;
     height: 280px;
     margin-top: 0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px white;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;
   }
 
   p{font-size:17px;}
@@ -256,6 +269,7 @@
     padding: 12px 16px;
     cursor: pointer;
     margin-top: 40px;
+    margin-bottom:90px;
   }
 
   #home{font-size: 30px;
@@ -271,7 +285,7 @@
 
 @media screen and (max-width: 1024px) {
   body {
-    background-color: #002939;
+    background-color: white;
     margin:0;
     font-family:'Outfit', sans-serif;
     margin: 0px;
@@ -284,29 +298,35 @@
   text-align:center;
   color: white;}
 
-  .nav{
+  .nav{position:fixed;
+  z-index:1;
+  width:-webkit-fill-available;
   display: flex;
   justify-content:space-around;
-  padding:14px;
-  background-color: rgba(255, 255, 255, .15);
-  backdrop-filter: blur(5px);
-  margin-bottom:40px;}
+  padding:0px;
+  background-color: rgba(29, 29, 31, 0.938);}
 
-  .intestazione{display: flex;
+  .sfondo{background-color:#edeef0;
+  box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);}
+
+  .intestazione1{display: flex;
   justify-content:center;
   align-items:center;
-  color:white;
-  margin-top:20px;}
+  color:white;;
+  margin-top:0px;
+  margin-bottom:4px;}
+  
+  .intestazione2{display: none;}   
   
   .NomeLogo{display:grid;
   justify-content:center;
   height:80px;}
   
   .Nomelogo h1{margin:0px;
-    font-size: 38px;}
+  font-size: 38px;}
       
-    .Nomelogo p{margin:0px;
-    font-size: 17px;}
+  .Nomelogo p{margin:0px;
+  font-size: 17px;}
 
   .test{display:flex;
     flex-direction: column;
@@ -316,7 +336,7 @@
   .Notizie{
     display: flex;
     justify-content:left;
-    color:white;
+    color:#598596;
   }
 
   .Notizie h1{margin-bottom:10px;
@@ -332,14 +352,13 @@
     width: 300px;
     height: 280px;
     margin-top: 0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px white;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;
   }
 
   .Due {
@@ -348,28 +367,26 @@
     margin-right: 20px;
     margin-left:20px;
     margin-top: 0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px white;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;
   }
 
   .Tre {
     width: 300px;
     height: 280px;
     margin-top: 0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px white;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;
   }
 
   p{font-size:17px;}
@@ -391,7 +408,7 @@
     margin-top: 40px;
   }
 
-  #home,#food,#user,#setting{font-size: 25px;}
+  #home,#food,#user,#setting{font-size: 30px;}
 
   #home:hover{color:#549da0;}
   #food:hover{color:#549da0;}
@@ -401,7 +418,7 @@
 
 @media screen and (max-width: 820px) {
   body {
-    background-color: #002939;
+    background-color:white;
     margin:0;
     font-family: 'Outfit', sans-serif;
     margin: 0px;
@@ -424,25 +441,35 @@
   width: -webkit-fill-available;
   justify-content:space-around;
   padding:12px;
-  background-color: rgb(29, 29, 31);
+  background-color: rgba(29, 29, 31, 0.938);
   box-shadow:none;
   margin-bottom:0px;}
 
-  .intestazione{display: flex;
+  .sfondo{background-color:#edeef0}
+
+  .intestazione1{display: none;}
+
+  .intestazione2{display: flex;
   justify-content:center;
   align-items:center;
-  color:white;
-  margin-top:20px;}
+  color:#598596;
+  margin-top:0px;
+  margin-bottom:0px;}
 
   .NomeLogo{display:grid;
   justify-content:center;
   height:80px;}
 
   .Nomelogo h1{margin:0px;
-    font-size: 38px;}
-      
-    .Nomelogo p{margin:0px;
-    font-size: 17px;}
+    font-size: 38px;
+  }
+
+  .Nomelogo p{margin:0px;
+    font-size: 17px;
+  }
+
+  .img{width:-webkit-fill-available;
+  margin-top:0px;}
 
   .test{display:flex;
     flex-direction: column;
@@ -452,11 +479,11 @@
   .Notizie{
    display: flex;
    justify-content:left;
-   color:white;
+   color:#598596;
   }
 
   .Notizie h1{margin-bottom:10px;
-  margin-top:60px;}
+  margin-top:10px;}
 
   .Contenitore {
     display: flex;
@@ -470,13 +497,13 @@
     height: 260px;
     margin-right: 0px;
     margin-top:0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom: 20px;
     text-align:left;
-    color:white;
+    color:#598596;
   }
 
   .Due {
@@ -486,26 +513,26 @@
     margin-left:0px;
     margin-top:40px;
     margin-bottom:40px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom: 20px;
     text-align:left;
-    color:white;
+    color:#598596;
   }
 
   .Tre {
     width: -webkit-fill-available;
     height: 260px;
     margin-right: 0px;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgb(0 0 0 / 10%);
     padding-left:20px;
     padding-right:20px;
     padding-bottom:20px;
     text-align:left;
-    color:white;
+    color:#598596;
   }
 
   p{font-size:17px;}
@@ -519,11 +546,12 @@
     color: white;
     font-weight: 500;
     font-size: 20px;
-    background: #549da0;
+    background: #598596;
     border: none;
     border-radius: 5px;
     padding: 12px 16px;
     cursor: pointer;
+    width: -webkit-fill-available;
     margin-top:30px;
     margin-bottom:90px;
   }
@@ -531,6 +559,9 @@
   #home{font-size:23px;
   color:#549da0;}
 
-  #food,#user,#setting{font-size: 23px;}
+  #food,#user,#setting{font-size: 23px;
+  color:white;}
+
+  #NomeH, #NomeO, #NomeA, #NomeS{color:white;}
 }
   
