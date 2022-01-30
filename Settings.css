@@ -318,6 +318,8 @@
     color: #598596;
   }
 
+  .Versione:active{background-color:lightgrey;}
+
   .DentroVersione{display:none;
     width:90%;
     padding-top:0px
