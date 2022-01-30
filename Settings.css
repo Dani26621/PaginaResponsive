@@ -85,8 +85,8 @@
     color:white;
     border-radius:5px;
     padding:2px;
-    margin-right:15px;
-    margin-left:15px;
+    margin-right:30px;
+    margin-left:30px;
     font-size:25px;
   }
 
@@ -103,8 +103,8 @@
     color:white;
     border-radius:5px;
     padding:2px;
-    margin-right:15px;
-    margin-left:15px;
+    margin-right:30px;
+    margin-left:30px;
     font-size:25px;
   }
  
@@ -121,8 +121,8 @@
     color:yellow;
     border-radius:5px;
     padding:2px;
-    margin-right:15px;
-    margin-left:15px;
+    margin-right:30px;
+    margin-left:30px;
     font-size:25px;
   }   
  
@@ -139,18 +139,23 @@
     color:#0a7aff;
     border-radius:5px;
     padding:2px;
-    margin-right:15px;
-    margin-left:15px;
+    margin-right:30px;
+    margin-left:30px;
     font-size:25px;
   }   
 
   .icona1{font-size:42px;}
  
   #frecciaD{margin-left:auto;
-    margin-right:15px;
+    margin-right:30px;
   }
  
   .DentroVersione{display:none;
+    width:60%;
+    padding-top:100px;
+  }
+
+  .DentroContattaci{display:none;
     width:60%;
     padding-top:100px;
   }
@@ -165,18 +170,41 @@
     font-size:30px;
   }
 
-  .Descrizione p {font-size: 35px;}
+  .Descrizione p {font-size: 30px;}
  
   .Descrizione{display:grid;
     justify-content:center;
     width:-webkit-fill-available;
-    padding:10px;
+    padding:5px;
+    margin-bottom: 50px;
     border-radius:10px;
     color:#598596;
     background-color: #edeef0;
   }
+
+  .Descrizione1 p {font-size: 30px;
+  text-align: left;}
+
+  .Descrizione1{display:grid;
+    justify-content:center;
+    width:-webkit-fill-available;
+    padding:5px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom: 50px;
+    border-radius:10px;
+    color:#598596;
+    background-color: #edeef0;
+  }
+
+  .Descrizione1 a{color:#598596;
+  font-size: 30px;}
  
-  .Descrizione img{width:100%;}
+  .DentroVersione .Descrizione img{width:100%;
+  padding:10px;}
+
+  .DentroContattaci .Descrizione1 img{width:50%;
+  padding-top:50px;}
  
   #FrecciaS{font-size:35px;
     color:#0a7aff;
@@ -248,11 +276,41 @@
 
   .icona1{font-size:unset;}
 
+  .Generali div{margin-right:15px;
+    margin-left:15px
+  }
+
+  .Contattaci div{margin-right:15px;
+    margin-left:15px
+  }
+  .Valutaci div{margin-right:15px;
+    margin-left:15px
+  }
+  .Versione div{margin-right:15px;
+    margin-left:15px;
+  }   
+
+  #frecciaD{margin-left:auto;
+    margin-right:15px;
+  }
+
   .Indietro p{cursor: pointer;
     font-size:unset;
   }
+  
+  .Descrizione{
+    margin-bottom: 0px;
+  }
+
+  .DentroContattaci .Descrizione1 img{width:60%;
+  padding-top:20px;}
 
   .Descrizione p {font-size: unset;}
+
+  .Descrizione1 p {font-size: unset;}
+
+  .Descrizione1 a{color:#598596;
+  font-size: unset;}
 
   #FrecciaS{font-size:25px;
     color:#0a7aff;
@@ -317,6 +375,7 @@
     margin-top:20px;
     color: #598596;
   }
+
   .Generali:active{background-color:lightgrey;}
 
   .Contattaci:active{background-color:lightgrey;}
@@ -325,9 +384,22 @@
 
   .Versione:active{background-color:lightgrey;}
 
+  .Descrizione1{
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom:80px;
+  }
+
+  .DentroContattaci .Descrizione1 img{width:100%;
+    padding-top:20px;}
+
   .DentroVersione{display:none;
     width:90%;
     padding-top:0px
+  }
+  .DentroContattaci{display:none;
+    width:90%;
+    padding-top:0px;
   }
 
   #home,#food,#user,#setting{font-size: 23px;}

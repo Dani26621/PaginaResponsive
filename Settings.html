@@ -21,7 +21,7 @@ initial-scale=1.0">
                 </div>
                 <img src="https://img.icons8.com/emoji/80/000000/sandwich-emoji.png"/>
             </div>
-            <a href="index.html"><ion-icon name="home" id ="home"></ion-icon><br><b id="NomeH">home</b></a>
+            <a href="file.html"><ion-icon name="home" id ="home"></ion-icon><br><b id="NomeH">home</b></a>
             <a href=""><ion-icon name="fast-food" id="food" ></ion-icon><br><b id="NomeO">ordini</b></a>
             <a href=""><ion-icon name="person" id="user"></ion-icon><br><b id="NomeA">account</b></a>
             <a href="Settings.html"><ion-icon name="settings" id="setting"></ion-icon><br><b id="NomeS">settings</b></a>
@@ -42,7 +42,7 @@ initial-scale=1.0">
                         <ion-icon name="chevron-forward-sharp" id="frecciaD"></ion-icon>
                     </div>
     
-                    <div class="Contattaci">
+                    <div class="Contattaci" onclick="EntraContattaci()">
                         <div>
                             <ion-icon name="chatbubbles-sharp" class="Icona1"></ion-icon>
                         </div>
@@ -85,6 +85,23 @@ initial-scale=1.0">
                     <p>La verisone attuale della webapp è la 1.0!</p>
                 </div>
             </div>
+
+            <div class="DentroContattaci" id="Contattaci">
+
+                <div class="Indietro">
+                    <ion-icon name="chevron-back-sharp" id="FrecciaS"  onclick="EsciContattaci()"></ion-icon>
+                    <p  onclick="EsciContattaci()">Impostazioni</p>
+                </div>
+
+                <div class="Descrizione1">
+                    <center><img src="contatti.png"></center>
+                    <p>Per eventuali problemi riguardanti il funzionamento della webapp non esitare a contattarci!<br>
+                    <br>
+                    <a href="mailto:dany26621@gmail.com">Inviaci un'email!</a><br>
+                    Telefono: 3471219702 </p>
+                </div>
+
+            </div>
         </center>
 
         <script>
@@ -100,12 +117,32 @@ initial-scale=1.0">
                 Test.style.display = "none";
                 Versione.style.display = "block";   
             }
-
             function EsciVersione(){
 
                 if (Test.style.display == "none"){
                     Test.style.display = "block";  
                     Versione.style.display = "none";
+                }
+                else                
+                Test.style.display = "block";
+            }
+
+            var Contattaci = document.getElementById("Contattaci");
+            function EntraContattaci(){
+
+                if (Test.style.display == "block"){
+                    Test.style.display = "none";  
+                    Contattaci.style.display = "block";
+                }
+                else                
+                Test.style.display = "none";
+                Contattaci.style.display = "block";   
+            }
+            function EsciContattaci(){
+
+                if (Test.style.display == "none"){
+                    Test.style.display = "block";  
+                    Contattaci.style.display = "none";
                 }
                 else                
                 Test.style.display = "block";
