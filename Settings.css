@@ -317,6 +317,11 @@
     margin-top:20px;
     color: #598596;
   }
+  .Generali:active{background-color:lightgrey;}
+
+  .Contattaci:active{background-color:lightgrey;}
+
+  .Valutaci:active{background-color:lightgrey;}
 
   .Versione:active{background-color:lightgrey;}
 
