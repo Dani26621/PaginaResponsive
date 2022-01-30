@@ -150,6 +150,10 @@
     margin-right:30px;
   }
  
+  .DentroValutaci{display:none;
+    width:80%;
+    padding-top:100px;
+  }
   .DentroVersione{display:none;
     width:60%;
     padding-top:100px;
@@ -170,8 +174,6 @@
     font-size:30px;
   }
 
-  .Descrizione p {font-size: 30px;}
- 
   .Descrizione{display:grid;
     justify-content:center;
     width:-webkit-fill-available;
@@ -182,11 +184,35 @@
     background-color: #edeef0;
   }
 
-  .Descrizione1 p {font-size: 30px;
-  text-align: left;}
+  .Descrizione p {font-size: 30px;}
+
+  .Descrizione img{width:100%;}
 
   .Descrizione1{display:grid;
     justify-content:center;
+    width:-webkit-fill-available;
+    padding:5px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom: 0px;
+    border-radius:10px;
+    color:#598596;
+    background-color: #edeef0;
+  }
+
+  .Descrizione1 p {font-size: 30px;
+  text-align: left;
+  margin-top: 0px;}
+
+  .Descrizione1 a{color:#598596;
+  font-size: 30px;}
+
+  .Descrizione1 img{width:50%;
+  padding-top:50px;}
+
+  .Descrizione2{display:flex;
+    align-items:center;
+    justify-content:space-evenly;
     width:-webkit-fill-available;
     padding:5px;
     padding-left:20px;
@@ -197,15 +223,27 @@
     background-color: #edeef0;
   }
 
-  .Descrizione1 a{color:#598596;
-  font-size: 30px;}
- 
-  .DentroVersione .Descrizione img{width:100%;
-  padding:10px;}
+  .Descrizione2 p{font-size:30px;}
 
-  .DentroContattaci .Descrizione1 img{width:50%;
-  padding-top:50px;}
- 
+  .Descrizione2 img{width: 40%;
+  margin-top:15px;}
+
+  #Stella1, #Stella2, #Stella3, #Stella4, #Stella5{font-size: 50px;
+  color:#598596;
+  cursor: pointer;
+  margin-bottom: 30px;}
+
+  .Button{display: inline-block;
+  color: white;
+  font-weight: 500;
+  font-size: 30px;
+  background: #549da0;
+  border: none;
+  border-radius: 5px; 
+  padding: 12px 16px;
+  cursor: pointer;
+  margin-bottom:30px;}
+
   #FrecciaS{font-size:35px;
     color:#0a7aff;
     cursor: pointer;
@@ -302,22 +340,30 @@
     margin-bottom: 20px;
   }
 
-  .DentroContattaci .Descrizione1 img{width:60%;
-  padding-top:20px;}
-
   .Descrizione p {font-size: unset;}
+
+  .Descrizione1 img{width:395px;;
+  padding-top:20px;}
 
   .Descrizione1 p {font-size: unset;}
 
   .Descrizione1 a{color:#598596;
   font-size: unset;}
 
+  .Descrizione2 p{font-size:unset;}
+
+  .Descrizione2 img{width: 430px;
+  margin-top:15px;}
+
+  #Stella1, #Stella2, #Stella3, #Stella4, #Stella5{font-size: 30px;}
+
+  .Button{font-size: 15px;}
+
   #FrecciaS{font-size:25px;
     color:#0a7aff;
     cursor: pointer;
   }
 
-  
   #setting{font-size: 30px;
     color:#549da0;
   }
@@ -401,6 +447,34 @@
     width:90%;
     padding-top:0px;
   }
+
+  .DentroValutaci{padding-top:0px;}
+
+  .Descrizione2{display:grid;
+    align-items:center;
+    justify-content:center;
+    width:-webkit-fill-available;
+    padding:5px;
+    padding-left:20px;
+    padding-right:20px;
+    margin-bottom: 100px;
+    border-radius:10px;
+    color:#598596;
+    background-color: #edeef0;
+  }
+
+  .Descrizione2 p{font-size:unset;}
+
+  .Descrizione2 img{width: 100%;
+  margin-top:15px;}
+
+  #Stella1, #Stella2, #Stella3, #Stella4, #Stella5{font-size: 30px;
+  color:#598596;
+  cursor: pointer;
+  margin-bottom: 30px;}
+
+  .Button{font-size: 15px;
+  margin:0px;}
 
   #home,#food,#user,#setting{font-size: 23px;}
 

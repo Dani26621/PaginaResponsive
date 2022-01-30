@@ -50,7 +50,7 @@ initial-scale=1.0">
                         <ion-icon name="chevron-forward-sharp" id="frecciaD"></ion-icon>
                     </div>
     
-                    <div class="Valutaci">
+                    <div class="Valutaci" onclick="EntraValutaci()">
                         <div>
                             <ion-icon name="star-sharp" class="Icona1"></ion-icon>
                         </div>
@@ -102,10 +102,40 @@ initial-scale=1.0">
                 </div>
 
             </div>
+
+            <div class="DentroValutaci" id="Valutaci">
+
+                <div class="Indietro">
+                    <ion-icon name="chevron-back-sharp" id="FrecciaS"  onclick="EsciValutaci()"></ion-icon>
+                    <p  onclick="EsciValutaci()">Impostazioni</p>
+                </div>
+
+                <div class="Descrizione2">
+                    <img src="Valutaci.webp">
+
+                    <div>
+                        <p>Dai un voto alla nostra webapp!</p>
+
+                        <div class="ContenitoreStelle">
+                            <ion-icon name="star" id="Stella1" onmouseover="ChangeColorStella1()" onmouseleave="Change1ColorStella1()" onclick="Valuta1Stella()"></ion-icon>
+                            <ion-icon name="star" id="Stella2" onmouseover="ChangeColorStella2()" onmouseleave="Change2ColorStella2()" onclick="Valuta2Stella()"></ion-icon>
+                            <ion-icon name="star" id="Stella3" onmouseover="ChangeColorStella3()" onmouseleave="Change3ColorStella3()" onclick="Valuta3Stella()"></ion-icon>
+                            <ion-icon name="star" id="Stella4" onmouseover="ChangeColorStella4()" onmouseleave="Change4ColorStella4()" onclick="Valuta4Stella()"></ion-icon>
+                            <ion-icon name="star" id="Stella5" onmouseover="ChangeColorStella5()" onmouseleave="Change5ColorStella5()" onclick="Valuta5Stella()"></ion-icon>
+                        </div>
+
+                        <form>
+                            <center><Button type="submit" class="Button">Invia!</Button></center>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </center>
 
         <script>
             var Test = document.getElementById("test");
+
             var Versione = document.getElementById("Versione");
             function EntraVersione(){
 
@@ -146,6 +176,132 @@ initial-scale=1.0">
                 }
                 else                
                 Test.style.display = "block";
+            }
+
+            var Valutaci = document.getElementById("Valutaci");
+            function EntraValutaci(){
+
+                if (Test.style.display == "block"){
+                    Test.style.display = "none";  
+                    Valutaci.style.display = "block";
+                }
+                else                
+                Test.style.display = "none";
+                Valutaci.style.display = "block";   
+                }
+            function EsciValutaci(){
+
+                if (Test.style.display == "none"){
+                    Test.style.display = "block";  
+                    Valutaci.style.display = "none";
+                }
+                else                
+                Test.style.display = "block";
+            }
+
+            //Funzionamento di valutazione stelle
+            var Stella1 = document.getElementById("Stella1");
+            var Stella2 = document.getElementById("Stella2");
+            var Stella3 = document.getElementById("Stella3");
+            var Stella4 = document.getElementById("Stella4");
+            var Stella5 = document.getElementById("Stella5");
+
+            function ChangeColorStella1(){
+                if( Stella1.style.color != "#FDCC0D"){
+                    Stella1.style.color = "#FDCC0D";
+                }
+            }
+            function Change1ColorStella1(){
+                if(Stella1.style.color = "#FDCC0D"){
+                    Stella1.style.color = "#598596";
+                }    
+            }
+
+            function ChangeColorStella2(){
+                if( Stella2.style.color != "#FDCC0D"){
+                    Stella1.style.color = "#FDCC0D";
+                    Stella2.style.color = "#FDCC0D";
+                }
+            }
+            function Change2ColorStella2(){
+                if(Stella2.style.color = "#FDCC0D"){
+                    Stella1.style.color = "#598596";
+                    Stella2.style.color = "#598596";
+                }
+            }
+
+            function ChangeColorStella3(){
+                if( Stella3.style.color != "#FDCC0D"){
+                    Stella1.style.color = "#FDCC0D";
+                    Stella2.style.color = "#FDCC0D";
+                    Stella3.style.color = "#FDCC0D";
+                }
+            }
+            function Change3ColorStella3(){
+                if(Stella3.style.color = "#FDCC0D"){
+                    Stella1.style.color = "#598596";
+                    Stella2.style.color = "#598596";
+                    Stella3.style.color = "#598596";
+                }
+            }
+
+            function ChangeColorStella4(){
+                if( Stella4.style.color != "#FDCC0D"){
+                    Stella1.style.color = "#FDCC0D";
+                    Stella2.style.color = "#FDCC0D";
+                    Stella3.style.color = "#FDCC0D";
+                    Stella4.style.color = "#FDCC0D";
+                }
+            }
+            function Change4ColorStella4(){
+                if(Stella4.style.color = "#FDCC0D"){
+                    Stella1.style.color = "#598596";
+                    Stella2.style.color = "#598596";
+                    Stella3.style.color = "#598596";
+                    Stella4.style.color = "#598596";
+                }
+            }
+
+            function ChangeColorStella5(){
+                if( Stella5.style.color != "#FDCC0D"){
+                    Stella1.style.color = "#FDCC0D";
+                    Stella2.style.color = "#FDCC0D";
+                    Stella3.style.color = "#FDCC0D";
+                    Stella4.style.color = "#FDCC0D";
+                    Stella5.style.color = "#FDCC0D";
+                }
+            }
+            function Change5ColorStella5(){
+                if(Stella1.style.color = "#FDCC0D"){
+                    Stella1.style.color = "#598596";
+                    Stella2.style.color = "#598596";
+                    Stella3.style.color = "#598596";
+                    Stella4.style.color = "#598596";
+                    Stella5.style.color = "#598596";
+                }
+            }
+
+            function Valuta1Stella(){
+                if(Stella1.style.color = "#FDCC0D"){
+                    Stella1.style.color ="#FDCC0D";
+                    Stella2.style.color ="#598596";
+                    Stella3.style.color ="#598596";
+                    Stella4.style.color ="#598596";
+                    Stella5.style.color ="#598596";
+                }
+            }    
+   
+            function Valuta2Stella(){
+                
+            }            
+            function Valuta3Stella(){
+                
+            }          
+            function Valuta4Stella(){
+                
+            }
+            function Valuta5Stella(){
+                
             }
         </script>
 
