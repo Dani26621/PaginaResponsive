@@ -217,7 +217,7 @@
     padding:5px;
     padding-left:20px;
     padding-right:20px;
-    margin-bottom: 20px;
+    margin-bottom:20px;
     border-radius:10px;
     color:#598596;
     background-color: #edeef0;
@@ -449,8 +449,8 @@
   }
 
   .DentroValutaci{display:none;
-  width:90%;
-  padding-top:0px;}
+    width:90%;
+    padding-top:0px;}
 
   .Descrizione2{display:grid;
     align-items:center;
@@ -481,3 +481,5 @@
   #home,#food,#user,#setting{font-size: 23px;}
 
   #NomeH,#NomeO,#NomeA,#NomeS{font-size:12px;}
+}
+  
