@@ -21,7 +21,7 @@ initial-scale=1.0">
                 </div>
                 <img src="https://img.icons8.com/emoji/80/000000/sandwich-emoji.png"/>
             </div>
-            <a href="index.html"><ion-icon name="home" id ="home"></ion-icon><br><b id="NomeH">home</b></a>
+            <a href="file.html"><ion-icon name="home" id ="home"></ion-icon><br><b id="NomeH">home</b></a>
             <a href=""><ion-icon name="fast-food" id="food" ></ion-icon><br><b id="NomeO">ordini</b></a>
             <a href=""><ion-icon name="person" id="user"></ion-icon><br><b id="NomeA">account</b></a>
             <a href="Settings.html"><ion-icon name="settings" id="setting"></ion-icon><br><b id="NomeS">settings</b></a>
@@ -110,7 +110,8 @@ initial-scale=1.0">
                     <p  onclick="EsciValutaci()">Impostazioni</p>
                 </div>
 
-                <div class="Descrizione2">
+                <div class="Descrizione2" id="Descrizione2">
+
                     <img src="Valutaci.webp">
 
                     <div>
@@ -124,10 +125,23 @@ initial-scale=1.0">
                             <ion-icon name="star" id="Stella5" onclick="Valuta5Stella()"></ion-icon>
                         </div>
 
-                        <form>
-                            <center><Button type="submit" class="Button">Invia!</Button></center>
-                        </form>
+                        <center>
+                            <Button class="Button" onclick="invia()">Invia!</Button>
+                            <p id ="Error">Attenzione! Nessuna valutazione inserita</p>
+                        </center>
                     </div>
+
+                </div>
+
+                <div id="Descrizione22">
+
+                    <img src="Feedback.png">
+
+                    <div>
+                        <h1>Grazie per il tuo feedback!</h1>
+                        <ion-icon name="heart" id ="cuore"></ion-icon>
+                    </div>
+
                 </div>
 
             </div>
@@ -199,6 +213,21 @@ initial-scale=1.0">
                 Test.style.display = "block";
             }
 
+            var Errore = document.getElementById("Error");
+            var Descrizione2 = document.getElementById("Descrizione2");
+            var Descrizione22 = document.getElementById("Descrizione22");
+            function invia(){
+
+                if(Stella1.style.color == "gold"){
+                    Errore.style.display = "none";
+                    Descrizione2.style.display = "none";
+                    Descrizione22.style.display = "flex";
+                }
+                else if(Stella1.style.color != "gold")
+                Errore.style.display = "block";
+
+            }
+
             //Funzionamento di valutazione stelle
             var Stella1 = document.getElementById("Stella1");
             var Stella2 = document.getElementById("Stella2");
@@ -208,18 +237,18 @@ initial-scale=1.0">
 
             function Valuta1Stella(){
                 if(Stella1.style.color != "red"){
-                    Stella1.style.color ="#FDCC0D";
+                    Stella1.style.color ="gold";
                     Stella2.style.color ="#598596";
                     Stella3.style.color ="#598596";
                     Stella4.style.color ="#598596";
                     Stella5.style.color ="#598596";
                 }
             }    
-   
+
             function Valuta2Stella(){
                 if(Stella2.style.color != "red"){
-                    Stella1.style.color ="#FDCC0D";
-                    Stella2.style.color ="#FDCC0D";
+                    Stella1.style.color ="gold";
+                    Stella2.style.color ="gold";
                     Stella3.style.color ="#598596";
                     Stella4.style.color ="#598596";
                     Stella5.style.color ="#598596";
@@ -227,29 +256,29 @@ initial-scale=1.0">
             }            
             function Valuta3Stella(){
                 if(Stella3.style.color != "red"){
-                    Stella1.style.color ="#FDCC0D";
-                    Stella2.style.color ="#FDCC0D";
-                    Stella3.style.color ="#FDCC0D";
+                    Stella1.style.color ="gold";
+                    Stella2.style.color ="gold";
+                    Stella3.style.color ="gold";
                     Stella4.style.color ="#598596";
                     Stella5.style.color ="#598596";
                 }
             }          
             function Valuta4Stella(){
                 if(Stella4.style.color != "red"){
-                    Stella1.style.color ="#FDCC0D";
-                    Stella2.style.color ="#FDCC0D";
-                    Stella3.style.color ="#FDCC0D";
-                    Stella4.style.color ="#FDCC0D";
+                    Stella1.style.color ="gold";
+                    Stella2.style.color ="gold";
+                    Stella3.style.color ="gold";
+                    Stella4.style.color ="gold";
                     Stella5.style.color ="#598596";
                 }
             }
             function Valuta5Stella(){
                 if(Stella5.style.color != "red"){
-                    Stella1.style.color ="#FDCC0D";
-                    Stella2.style.color ="#FDCC0D";
-                    Stella3.style.color ="#FDCC0D";
-                    Stella4.style.color ="#FDCC0D";
-                    Stella5.style.color ="#FDCC0D";
+                    Stella1.style.color ="gold";
+                    Stella2.style.color ="gold";
+                    Stella3.style.color ="gold";
+                    Stella4.style.color ="gold";
+                    Stella5.style.color ="gold";
                 }
             }
         </script>
