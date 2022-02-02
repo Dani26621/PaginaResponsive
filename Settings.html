@@ -34,7 +34,7 @@ initial-scale=1.0">
 
                 <div class="Contenitore">
 
-                    <div class="Generali">
+                    <div class="Generali" onclick="EntraGenerali()">
                         <div>
                             <ion-icon name="cog-sharp" class="Icona1"></ion-icon>
                         </div>
@@ -145,6 +145,68 @@ initial-scale=1.0">
                 </div>
 
             </div>
+
+            <div class="DentroGenerali" id="Generali">
+
+                <div class="Indietro">
+                    <ion-icon name="chevron-back-sharp" id="FrecciaS"  onclick="EsciGenerali()"></ion-icon>
+                    <p  onclick="EsciGenerali()">Impostazioni</p>
+                </div>
+
+                <div class="Descrizione3" id="Descrizione3">
+
+                    <div class="ContenitoreProfili">
+
+                        <h1>Sviluppatori...</h1>
+                        <div class ="Profili">
+                            <img src="Profili.png">
+                            <a target="_blank" href="https://instagram.com/_dani.picciau_?utm_medium=copy_link">
+                                <p class="Sviluppatore">Picciau Daniele</p>
+                                <p class="Ruolo">Front-End developer</p>
+                            </a>
+                        </div>
+                        <div class ="Profili">
+                            <img src="Profili.png">
+                            <a target="_blank" href="https://instagram.com/giacomo.porcu?utm_medium=copy_link">
+                                <p class="Sviluppatore">Porcu Giacomo</p>
+                                <p class="Ruolo">Front-End developer</p>
+                            </a>
+                        </div>
+                        <div class ="Profili">
+                            <img src="Profili.png">
+                            <a target="_blank" href="https://instagram.com/edo_cucchedda?utm_medium=copy_link">
+                                <p class="Sviluppatore">Cucchedda Edoardo</p>
+                                <p class="Ruolo">Front-End developer</p>
+                            </a>
+                        </div>
+                        <div class ="Profili">
+                            <img src="Profili.png">
+                            <a target="_blank" href="https://instagram.com/noemi_spano_?utm_medium=copy_link">
+                                <p class="Sviluppatore">Spano Noemi</p>
+                                <p class="Ruolo">Back-End developer</p>
+                            </a>
+                        </div>
+                        <div class ="Profili">
+                            <img src="Profili.png">
+                            <a target="_blank" href="https://instagram.com/simone.calistri?utm_medium=copy_link">
+                                <p class="Sviluppatore">Calistri Simone</p>
+                                <p class="Ruolo">Back-End developer</p>
+                            </a>
+                        </div>
+                        <div class ="Profili">
+                            <img src="Profili.png">
+                            <a target="_blank" href="https://instagram.com/mulas_gabriele?utm_medium=copy_link">
+                                <p class="Sviluppatore">Mulas Gabriele</p>
+                                <p class="Ruolo">Back-End developer</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <img class="Pc" src="Generali.png">
+                    
+                </div>
+
+            </div>
         </center>
 
         <script>
@@ -202,7 +264,7 @@ initial-scale=1.0">
                 else                
                 Test.style.display = "none";
                 Valutaci.style.display = "block";   
-                }
+            }
             function EsciValutaci(){
 
                 if (Test.style.display == "none"){
@@ -213,6 +275,27 @@ initial-scale=1.0">
                 Test.style.display = "block";
             }
 
+            var Generali = document.getElementById("Generali");
+            function EntraGenerali(){
+                if (Test.style.display == "block"){
+                    Test.style.display = "none";  
+                    Generali.style.display = "block";
+                }
+                else         
+                Test.style.display = "none";
+                Generali.style.display = "block";   
+            }
+
+            function EsciGenerali(){
+                if (Test.style.display == "none"){
+                    Test.style.display = "block";  
+                    Generali.style.display = "none";
+                }
+                else                
+                Test.style.display = "block";
+            }
+
+            //Feedback
             var Errore = document.getElementById("Error");
             var Descrizione2 = document.getElementById("Descrizione2");
             var Descrizione22 = document.getElementById("Descrizione22");

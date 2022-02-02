@@ -163,6 +163,11 @@
     width:60%;
     padding-top:100px;
   }
+
+  .DentroGenerali{display:none;
+    width:60%;
+    padding-top:100px;
+  }
  
   .Indietro{display:flex;
     justify-content:left;
@@ -267,6 +272,50 @@
 
   #cuore{color: red;
   font-size: 60px;}
+
+  .Descrizione3{display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    width:-webkit-fill-available;
+    padding:20px;
+    border-radius:10px;
+    color:#598596;
+    background-color: #edeef0;
+  }
+
+  .ContenitoreProfili{display:grid;
+    align-items: center;
+    padding:10px;
+  }
+
+  .ContenitoreProfili h1{margin-top:0px;}
+
+  .Profili{display:flex;
+    align-items: center;
+    width: -webkit-fill-available;
+    padding:10px;
+  }
+
+  .Sviluppatore{color: #598596;
+    text-decoration: underline;
+    text-align: left;
+    margin:0px;
+    font-size:23px;
+  }
+
+  .Ruolo{color: black;
+    margin:0px;
+    text-align: left;
+    font-size:23px;
+  }
+
+  .Profili img{border-radius:50%;
+   width:42px;
+   height:42px;
+   margin-right:20px;
+  }
+
+  .Descrizione3 .Pc{width:50%;}
 
   #FrecciaS{font-size:35px;
     color:#0a7aff;
@@ -393,6 +442,27 @@
   #cuore{color: red;
   font-size: 50px;}
 
+  .Sviluppatore{color: #598596;
+    text-decoration: underline;
+    text-align: left;
+    margin:0px;
+    font-size:unset;
+  }
+
+  .Ruolo{color: black;
+    margin:0px;
+    text-align: left;
+    font-size:unset;
+  }
+  .ContenitoreProfili h1{margin-top:0px;
+  font-size:34px;}
+
+  .Profili img{border-radius:50%;
+   width:32px;
+   height:32px;
+   margin-right:20px;
+  }
+
   #FrecciaS{font-size:25px;
     color:#0a7aff;
     cursor: pointer;
@@ -411,12 +481,31 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .Sviluppatore{color: #598596;
+    text-decoration: underline;
+    text-align: left;
+    margin:0px;
+    font-size:14px;
+  }
 
+  .Ruolo{color: black;
+    margin:0px;
+    text-align: left;
+    font-size:14px;
+  }
+  .ContenitoreProfili h1{margin-top:0px;
+  font-size:26px;}
+
+  .Profili img{border-radius:50%;
+   width:28px;
+   height:28px;
+   margin-right:20px;
+  }
 }
 
 @media screen and (max-width: 820px) {
   body {
-    background-color: white;;
+    background-color: white;
     margin:0;
     font-family: 'Outfit', sans-serif;
     margin: 0px;
@@ -482,6 +571,11 @@
     padding-top:0px;
   }
 
+  .DentroGenerali{display:none;
+    width:90%;
+    padding-top:0px;
+  }
+
   .DentroValutaci{display:none;
   width:90%;
   padding-top:0px;}
@@ -535,7 +629,55 @@
   #cuore{color: red;
   font-size: 40px;}
 
+  .Descrizione3{display:flex;
+    flex-direction: column-reverse;
+    align-items:center;
+    width:-webkit-fill-available;
+    padding:20px;
+    border-radius:10px;
+    color:#598596;
+    background-color: #edeef0;
+    margin-bottom:90px;
+  }
+
+  .ContenitoreProfili{display:grid;
+    align-items: center;
+    padding:10px;
+  }
+
+  .ContenitoreProfili h1{margin-top:0px;
+  text-align: center;}
+
+  .Profili{display:flex;
+    align-items: center;
+    width: -webkit-fill-available;
+    padding:10px;
+  }
+
+  .Sviluppatore{color: #598596;
+    text-decoration: underline;
+    text-align: left;
+    margin:0px;
+    font-size:18px;
+  }
+
+  .Ruolo{color: black;
+    margin:0px;
+    text-align: left;
+    font-size:18px;
+  }
+
+  .Profili img{border-radius:50%;
+   width:42px;
+   height:42px;
+   margin-right:20px;
+  }
+
+  .Descrizione3 .Pc{width:100%;
+  margin-bottom: 20px;}
+
   #home,#food,#user,#setting{font-size: 23px;}
 
   #NomeH,#NomeO,#NomeA,#NomeS{font-size:12px;}
+}
   
