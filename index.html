@@ -50,19 +50,19 @@ initial-scale=1.0">
                     <div class="Contenitore">
             
                         <div class="Uno">
-                            <h5>21 gennaio 2022</h5>
+                            <h5 id ="date"></h5>
                             <h4>Ciao! Arriva la nuova webapp del giua bar</h4>
                             <p>Nuove notizie presto aggiunte</p>
                         </div>
             
                         <div class="Due">
-                            <h5>21 gennaio 2022</h5>
+                            <h5 id ="date1"></h5>
                             <h4>Ciao! Qui le cose procedono molto bene</h4>
                             <p>Nuove notizie presto aggiunte!</p>
                         </div>
             
                         <div class="Tre">
-                            <h5>21 gennaio 2022</h5>
+                            <h5 id ="date2"></h5>
                             <h4>Ciao! Qui le cose procedono molto bene</h4>
                             <p>Nuove notizie presto aggiunte!</p>
                         </div>
@@ -75,12 +75,19 @@ initial-scale=1.0">
                 </div>
             </center>
         </div>
+    
+        <script>
+            n =  new Date();
+            y = n.getFullYear();
+            m = n.toLocaleString('default', { month: 'long' });
+            d = n.getDate();
+            document.getElementById("date").innerHTML = d + " " + m + " " + y;
+            document.getElementById("date1").innerHTML = d + " " + m + " " + y;
+            document.getElementById("date2").innerHTML = d + " " + m + " " + y;
+        </script>
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
-        <script>
-        </script>
     
     </body>
 </html>
