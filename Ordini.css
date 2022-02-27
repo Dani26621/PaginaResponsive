@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+@media screen and (max-width: 2564px) {
+    body {
+      font-family: 'Outfit', sans-serif !important;
+      background-color: white;
+      margin:0;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      font-size:1.2rem;
+    }
+  
+    a{text-decoration: none;
+      text-align:center;
+      font-size:20px;
+      color: white;
+    }
+  
+    .nav{position:fixed;
+      z-index:1;
+      width:-webkit-fill-available;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      padding:5px;
+      background-color: rgba(29, 29, 31, 0.938);
+    }
+  
+    .intestazione1{display: flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      margin-top:0px;
+      margin-bottom:15px;
+    }
+  
+    .NomeLogo{display:grid;
+      justify-content:center;
+      height:80px;
+    }
+        
+    .Nomelogo h1{margin:0px;
+      font-size: 45px;
+    }
+            
+    .Nomelogo p{margin:0px;
+      font-size: 24px;
+    }
+
+    #food{font-size: 40px;
+    color:#549da0;}
+      
+    #setting,#user,#home{font-size: 40px;}
+    
+    #home:hover{color:#549da0;}
+    #food:hover{color:#549da0;}
+    #user:hover{color:#549da0;}
+    #setting:hover{color:#549da0;}
+}
+
+@media screen and (max-width: 1540px) {
+    body {
+      background-color: white;;
+      margin:0;
+      font-family: 'Outfit', sans-serif !important;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      font-size:1.2rem;
+    }
+  
+    a{text-decoration: none;
+      text-align:center;
+      font-size:16px;
+      color: white;
+    }
+  
+    .nav{position:fixed;
+      z-index:1;
+      width:-webkit-fill-available;
+      display: flex;
+      justify-content:space-around;
+      align-items: center;
+      padding: 0px;
+      background-color: rgba(29, 29, 31, 0.938);
+    }
+  
+    .intestazione1{display: flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      margin-top:0px;
+      margin-bottom:4px;
+    }
+  
+    .NomeLogo{display:grid;
+      justify-content:center;
+      height:80px;
+    }
+        
+    .Nomelogo h1{margin:0px;
+      font-size: 38px;
+    }
+          
+    .Nomelogo p{margin:0px;
+      font-size: 17px;
+    }
+  
+    #food{font-size: 30px;
+      color:#549da0;
+    }
+        
+    #setting,#user,#home{font-size: 30px;}
+    
+    #home:hover{color:#549da0;}
+    #food:hover{color:#549da0;}
+    #user:hover{color:#549da0;}
+    #setting:hover{color:#549da0;}
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 820px) {
+    body {
+      background-color: white;
+      margin:0;
+      font-family: 'Outfit', sans-serif !important;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      font-size:1.2rem;
+    }
+  
+    a{text-decoration: none;
+    text-align:center;
+    color: white;}
+  
+    .nav{
+    position: fixed;
+    bottom:0;
+    z-index: 1;
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content:space-around;
+    padding:12px;
+    background-color: rgba(29, 29, 31, 0.938);
+    box-shadow:none;
+    margin-bottom:0px;}
+  
+    .Intestazione1{display: none;}
+  
+    #home,#food,#user,#setting{font-size: 23px;}
+  
+    #NomeH,#NomeO,#NomeA,#NomeS{font-size:12px;}
+  }
