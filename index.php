@@ -13,8 +13,32 @@ initial-scale=1.0">
 
     <body>
 
+        <nav class="nav">
+            <div class="Intestazione1">
+                <div class="NomeLogo">
+                    <h1>Hanns-g bar</h1>
+                    <p>Ordina, mangia, rilassati</p>
+                </div>
+                <img src="https://img.icons8.com/emoji/80/000000/sandwich-emoji.png"/>
+            </div>
+            <a href="#index.php"><ion-icon name="log-in-outline" id= "login"></ion-icon><br><b id="NomeL">login</b></a>
+            <a href="index.php"><ion-icon name="person-add" id= "register"></ion-icon><br><b id="NomeR">Registrati</b></a>
+        </nav>
+
+        <div class="Intestazione2">
+            <div class="NomeLogo">
+                <h1>Hanns-g bar</h1>
+                <p>Ordina, mangia, rilassati</p>
+            </div>
+            <img src="https://img.icons8.com/emoji/80/000000/sandwich-emoji.png"/>
+        </div>
+
+
+
+
 
         <form action="register.php" method="POST">
+
             <h2>Registrati<h2>
 
             <p>Email</p>
