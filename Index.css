@@ -52,6 +52,85 @@
         font-size: 24px;
     }
 
+    .Contenitore{display: flex;
+        justify-content: center;
+        align-items:center;
+        padding-top: 100px;
+        width:90%;
+    }
+ 
+    .ContenitoreForm{width: 27.33%; 
+        margin: 40px 3%;
+        display: flex;
+        justify-content: center;
+    }
+ 
+    input[type="text"]{font: 18px/27px "Lato", Arial, sans-serif; 
+        color: #333; 
+        width: 145%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+ 
+    input[type="password"]{font: 18px/27px "Lato", Arial, sans-serif; 
+        color: #333; 
+        width: 145%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+
+    input[type="email"]{font: 18px/27px "Lato", Arial, sans-serif; 
+        color: #333; 
+        width: 145%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+ 
+    form{font-size:29px;}
+
+    :focus{outline: none;}
+ 
+    .col-3{float: left;
+        position: relative;
+    }
+ 
+    .effect-1 ~ .focus-border{position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        width: 0; 
+        height: 2px; 
+        background-color: #4caf50; 
+        transition: 0.4s;
+    }
+ 
+    .effect-1:focus ~ .focus-border{width: 145%; 
+        transition: 0.4s;
+    }
+ 
+    .effect-1{border: 0; 
+        padding: 7px 0; 
+        border-bottom: 1px solid #ccc;
+    }
+ 
+    .btn{
+        padding: 0.6rem 1.2rem;
+        background: #da5767;
+        color: white;
+        font-weight: bold;
+        font-size: 17px;
+        border: 2px solid #da5767;
+        border-radius:5px;
+    }
+ 
+    .btn-primary:hover {
+        background-color: #df8c96;
+        border-color: #df8c96;
+        transition: .3s;
+    }
+ 
+    .immagine{width: 800px;
+    height: 500px;}
+
     #register{font-size: 40px;
     color:#549da0;}
         
@@ -115,6 +194,86 @@
         font-size: 17px;
     }
 
+    .Contenitore{display: flex;
+       justify-content: center;
+       align-items:center;
+       padding-top: 100px;
+       width:90%;
+    }
+
+    .ContenitoreForm{width: 35%; 
+        margin: 40px 3%;
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; 
+        color: #333; 
+        width: 146%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+
+    input[type="password"]{font: 15px/24px "Lato", Arial, sans-serif; 
+        color: #333; 
+        width: 146%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+    input[type="email"]{font: 15px/24px "Lato", Arial, sans-serif; 
+        color: #333; 
+        width: 146%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+
+    :focus{outline: none;}
+
+    .col-3{float: left;
+        position: relative;
+    }
+
+    .effect-1 ~ .focus-border{position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        width: 0; 
+        height: 2px; 
+        background-color: #4caf50; 
+        transition: 0.4s;
+    }
+
+    .effect-1:focus ~ .focus-border{width: 146%; 
+        transition: 0.4s;
+    }
+
+    .effect-1{border: 0; 
+        padding: 7px 0; 
+        border-bottom: 1px solid #ccc;
+    }
+
+    .btn{
+        padding: 0.6rem 1.2rem;
+        background: #da5767;
+        color: white;
+        font-weight: bold;
+        font-size:13.3px;
+        margin-bottom:8px;
+        border: 2px solid #da5767;
+        border-radius:5px;
+    }
+
+    .btn-primary:hover {
+        background-color: #df8c96;
+        border-color: #df8c96;
+        transition: .3s;
+    }
+
+    .immagine{width: 500px;
+    height: 300px;}
+
+
+    form{font-size:19px;}
+
     #register{font-size: 30px;
      color:#549da0;
     }
@@ -174,6 +333,88 @@
         font-size: 17px;
     }
 
+    .Contenitore{display: flex;
+        justify-content: center;
+        align-items:center;
+        padding-top: 100px;
+        width:90%;
+    }
+ 
+    .ContenitoreForm{width:35%; 
+        margin: 40px 3%;
+        display: flex;
+        justify-content: center;
+    }
+ 
+    input[type="text"]{font: 12px/21px "Lato", Arial, sans-serif; 
+         color: #333; 
+         width: 146%; 
+         box-sizing: border-box; 
+         letter-spacing: 1px;
+    }
+ 
+    input[type="password"]{font: 12px/21px "Lato", Arial, sans-serif; 
+         color: #333; 
+         width: 146%; 
+         box-sizing: border-box; 
+         letter-spacing: 1px;
+    }
+
+    input[type="email"]{font: 12px/21px "Lato", Arial, sans-serif; 
+         color: #333; 
+         width: 146%; 
+         box-sizing: border-box; 
+         letter-spacing: 1px;
+    }
+ 
+    :focus{outline: none;}
+ 
+    .col-3{float: left;
+         position: relative;
+    }
+ 
+    .effect-1 ~ .focus-border{position: absolute; 
+         bottom: 0; 
+         left: 0; 
+         width: 0; 
+         height: 2px; 
+         background-color: #4caf50; 
+         transition: 0.4s;
+    }
+ 
+     .effect-1:focus ~ .focus-border{width: 146%; 
+         transition: 0.4s;
+    }
+ 
+    .effect-1{border: 0; 
+         padding: 7px 0; 
+         border-bottom: 1px solid #ccc;
+     }
+ 
+    .btn{
+         padding: 0.6rem 1.2rem;
+         background: #da5767;
+         color: white;
+         font-weight: bold;
+         font-size:10px;
+         margin-bottom:8px;
+         border: 2px solid #da5767;
+         border-radius:5px;
+    }
+ 
+    .btn-primary:hover {
+         background-color: #df8c96;
+         border-color: #df8c96;
+         transition: .3s;
+    }
+ 
+    .immagine{width: 400px;
+       height: 250px;
+    }
+ 
+ 
+    form{font-size:17px;}
+
     #register{font-size: 27px;
         color:#549da0;
     }
@@ -187,7 +428,7 @@
 
 @media screen and (max-width: 820px) {
     body {
-        background-color:white;
+        background-color: white;
         margin:0;
         font-family: 'Outfit', sans-serif !important;
         margin: 0px;
@@ -196,7 +437,7 @@
         font-size:1.2rem;
     }
     
-     a{text-decoration: none;
+    a{text-decoration: none;
         text-align:center;
         color: white;
     }
@@ -238,6 +479,88 @@
     .Nomelogo p{margin:0px;
         font-size: 17px;
     }
+
+    .Contenitore{display: flex;
+        flex-direction:column-reverse;
+        justify-content:center;
+        align-content: center;
+        padding:20px;
+        padding-top:0px;
+        width:90%;
+    }
+ 
+    .ContenitoreForm{width:100%;
+        margin: 0px 0%;
+        margin-bottom: 30px;
+    }
+ 
+    input[type="text"]{font: 12px/21px "Lato", Arial, sans-serif; 
+        color: #333; 
+        width: 146%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+ 
+    input[type="password"]{font: 12px/21px "Lato", Arial, sans-serif; 
+        color: #333; 
+        width: 146%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+
+    input[type="email"]{font: 12px/21px "Lato", Arial, sans-serif; 
+        color: #333; 
+        width: 146%; 
+        box-sizing: border-box; 
+        letter-spacing: 1px;
+    }
+ 
+    :focus{outline: none;}
+ 
+    .col-3{float: left;
+        position: relative;
+    }
+ 
+    .effect-1 ~ .focus-border{position: absolute; 
+        bottom: 0; 
+        left: 0; 
+        width: 0; 
+        height: 2px; 
+        background-color: #4caf50; 
+        transition: 0.4s;
+    }
+ 
+    .effect-1:focus ~ .focus-border{width: 146%; 
+        transition: 0.4s;
+    }
+ 
+    .effect-1{border: 0; 
+        padding: 7px 0; 
+        border-bottom: 1px solid #ccc;
+    }
+ 
+    .btn{
+        padding: 0.6rem 1.2rem;
+        background: #da5767;
+        color: white;
+        font-weight: bold;
+        font-size:10px;
+        margin-bottom:8px;
+        border: 2px solid #da5767;
+        border-radius:5px;
+    }
+ 
+    .btn-primary:hover {
+        background-color: #df8c96;
+        border-color: #df8c96;
+        transition: .3s;
+    }
+ 
+    .immagine{width:400px;
+       height: 250px;
+    }
+ 
+    form{font-size:19px;}
 
     #register{font-size:23px;
     color:#549da0;}

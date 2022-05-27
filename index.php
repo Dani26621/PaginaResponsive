@@ -21,7 +21,7 @@ initial-scale=1.0">
                 </div>
                 <img src="https://img.icons8.com/emoji/80/000000/sandwich-emoji.png"/>
             </div>
-            <a href="#index.php"><ion-icon name="log-in-outline" id= "login"></ion-icon><br><b id="NomeL">login</b></a>
+            <a href="#index.php"><ion-icon name="log-in" id= "login"></ion-icon><br><b id="NomeL">login</b></a>
             <a href="index.php"><ion-icon name="person-add" id= "register"></ion-icon><br><b id="NomeR">Registrati</b></a>
         </nav>
 
@@ -33,27 +33,52 @@ initial-scale=1.0">
             <img src="https://img.icons8.com/emoji/80/000000/sandwich-emoji.png"/>
         </div>
 
+        <center>
+            <div class="Contenitore">
 
+                <div class="ContenitoreForm">
 
+                    <form action="register.php" method="POST">
 
+                        <h2>Registrati<h2>
 
-        <form action="register.php" method="POST">
+                        <div class="col-3">
+                            <input type="email" class="effect-1" name="email" id ="email" placeholder="Inserire email" required>
+                            <span class="focus-border"></span>
+                        </div>
+                        <br><br>
 
-            <h2>Registrati<h2>
+                        <div class="col-3">
+                            <input type="text" class="effect-1" name="username" id ="username" placeholder="Inserire username" required>
+                            <span class="focus-border"></span>
+                        </div>
+                        <br><br>
 
-            <p>Email</p>
-            <input type="email" name="email" id ="email" placeholder="Inserisci la tua email" required>
+                        <div class="col-3">
+                            <input type="password" class="effect-1" name="password" id ="password" placeholder="Inserire password" required>
+                            <span class="focus-border"></span>
+                        </div>
+                        <br><br>
 
-            <p>Username</p>
-            <input type="text" name="username" id ="username" placeholder="Inserisci il tuo username" required>
+                        <div class="col-3">
+                            <input type="password" class="effect-1" name="password" id ="password" placeholder="Conferma password" required>
+                            <span class="focus-border"></span>
+                        </div>
+                        <br><br>
 
-            <p>Password</p>
-            <input type="password" name="password" id ="password" placeholder="Inserisci la tua password" required>
+                        <div>
+                            <input type="submit" value="Crea account" class="btn btn-primary">
+                            <input type="reset" value="Resetta campi"  class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
 
-            <input type="submit" value="invia">
-
-        </form>
-
+                <center>
+                    <img src="Register.png" class="immagine">
+                </center>
+            <div>
+        </center>
+        
     
         <script>
         </script>
