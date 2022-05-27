@@ -436,7 +436,7 @@
     color:#549da0;
   }
       
-  #food,#user,#home{font-size: 27px;}
+  #food,#user,#setting{font-size: 27px;}
 
   #home:hover{color:#549da0;}
   #food:hover{color:#549da0;}
