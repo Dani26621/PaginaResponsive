@@ -72,6 +72,7 @@
   }
 
   .Generali:hover{background-color: lightgrey;
+  transition: 0.5s;
   border-radius:10px 10px 0px 0px;}
  
   .Generali div{background-color:grey;
