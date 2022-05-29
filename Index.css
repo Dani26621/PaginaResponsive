@@ -67,21 +67,21 @@
  
     input[type="text"]{font: 18px/27px "Lato", Arial, sans-serif; 
         color: #333; 
-        width: 145%; 
+        width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
  
     input[type="password"]{font: 18px/27px "Lato", Arial, sans-serif; 
         color: #333; 
-        width: 145%; 
+        width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
 
     input[type="email"]{font: 18px/27px "Lato", Arial, sans-serif; 
         color: #333; 
-        width: 145%; 
+        width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
@@ -90,7 +90,7 @@
 
     :focus{outline: none;}
  
-    .col-3{float: left;
+    .col-3{float: none;
         position: relative;
     }
  
@@ -103,7 +103,7 @@
         transition: 0.4s;
     }
  
-    .effect-1:focus ~ .focus-border{width: 145%; 
+    .effect-1:focus ~ .focus-border{width: 100%; 
         transition: 0.4s;
     }
  
@@ -209,27 +209,27 @@
 
     input[type="text"]{font: 15px/24px "Lato", Arial, sans-serif; 
         color: #333; 
-        width: 146%; 
+        width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
 
     input[type="password"]{font: 15px/24px "Lato", Arial, sans-serif; 
         color: #333; 
-        width: 146%; 
+        width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
     input[type="email"]{font: 15px/24px "Lato", Arial, sans-serif; 
         color: #333; 
-        width: 146%; 
+        width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
 
     :focus{outline: none;}
 
-    .col-3{float: left;
+    .col-3{float: none;
         position: relative;
     }
 
@@ -242,7 +242,7 @@
         transition: 0.4s;
     }
 
-    .effect-1:focus ~ .focus-border{width: 146%; 
+    .effect-1:focus ~ .focus-border{width: 100%; 
         transition: 0.4s;
     }
 
@@ -348,28 +348,28 @@
  
     input[type="text"]{font: 12px/21px "Lato", Arial, sans-serif; 
          color: #333; 
-         width: 146%; 
+         width: 100%; 
          box-sizing: border-box; 
          letter-spacing: 1px;
     }
  
     input[type="password"]{font: 12px/21px "Lato", Arial, sans-serif; 
          color: #333; 
-         width: 146%; 
+         width: 100%; 
          box-sizing: border-box; 
          letter-spacing: 1px;
     }
 
     input[type="email"]{font: 12px/21px "Lato", Arial, sans-serif; 
          color: #333; 
-         width: 146%; 
+         width: 100%; 
          box-sizing: border-box; 
          letter-spacing: 1px;
     }
  
     :focus{outline: none;}
  
-    .col-3{float: left;
+    .col-3{float: none;
          position: relative;
     }
  
@@ -382,7 +382,7 @@
          transition: 0.4s;
     }
  
-     .effect-1:focus ~ .focus-border{width: 146%; 
+     .effect-1:focus ~ .focus-border{width: 100%; 
          transition: 0.4s;
     }
  
@@ -428,7 +428,7 @@
 
 @media screen and (max-width: 820px) {
     body {
-        background-color: white;
+        background-color:white;
         margin:0;
         font-family: 'Outfit', sans-serif !important;
         margin: 0px;
@@ -449,75 +449,79 @@
       display: flex;
       width: -webkit-fill-available;
       justify-content:space-around;
-      padding:12px;
+      padding: 12px;
       background-color: rgba(29, 29, 31, 0.938);
       box-shadow:none;
       margin-bottom:0px;
     }
     
-    .sfondo{background-color:#edeef0}
-    
     .intestazione1{display: none;}
-    
+
     .intestazione2{display: flex;
-      justify-content:center;
-      align-items:center;
-      color:#598596;
-      margin-top:0px;
-      margin-bottom:0px;
+        justify-content:center;
+        align-items:center;
+        color:#598596;
+        margin-top:0px;
+        margin-bottom:0px;
     }
-    
+  
     .NomeLogo{display:grid;
-      justify-content:center;
-      height:80px;
+        justify-content:center;
+        height:80px;
     }
-    
+  
     .Nomelogo h1{margin:0px;
-        font-size: 38px;
+      font-size: 38px;
     }
-    
+  
     .Nomelogo p{margin:0px;
-        font-size: 17px;
+      font-size: 17px;
     }
+  
 
     .Contenitore{display: flex;
         flex-direction:column-reverse;
         justify-content:center;
-        align-content: center;
-        padding:20px;
+        align-items: center;
+        padding:8px;
         padding-top:0px;
         width:90%;
     }
  
     .ContenitoreForm{width:100%;
         margin: 0px 0%;
+        display: flex;
+        justify-content:center;
+        align-content: center;
+        align-items: center;
         margin-bottom: 30px;
     }
  
     input[type="text"]{font: 12px/21px "Lato", Arial, sans-serif; 
         color: #333; 
-        width: 146%; 
+        width: 100%; 
+        align-self: center;
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
  
     input[type="password"]{font: 12px/21px "Lato", Arial, sans-serif; 
         color: #333; 
-        width: 146%; 
+        width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
 
     input[type="email"]{font: 12px/21px "Lato", Arial, sans-serif; 
         color: #333; 
-        width: 146%; 
+        width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
  
     :focus{outline: none;}
  
-    .col-3{float: left;
+    .col-3{float:none;
         position: relative;
     }
  
@@ -530,7 +534,7 @@
         transition: 0.4s;
     }
  
-    .effect-1:focus ~ .focus-border{width: 146%; 
+    .effect-1:focus ~ .focus-border{width: 100%; 
         transition: 0.4s;
     }
  
@@ -556,8 +560,9 @@
         transition: .3s;
     }
  
-    .immagine{width:400px;
-       height: 250px;
+    .immagine{
+        width: 314px;
+       height: 200px;
     }
  
     form{font-size:19px;}
