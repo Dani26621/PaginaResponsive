@@ -55,7 +55,7 @@
     .Contenitore{display: flex;
         justify-content: center;
         align-items:center;
-        padding-top: 100px;
+        padding-top: 150px;
         width:90%;
     }
  
@@ -131,11 +131,11 @@
         transition: .3s;
     }
 
-    .RegSuccesso{font-size:26px;
-        color:green;
+    .AccessoErrato{font-size:26px;
+        color:red;
     }
  
-    .immagine{width: 850px;
+    .immagine{width: 550px;
     height: 550px;}
 
     #login{font-size: 40px;
@@ -205,7 +205,7 @@
     .Contenitore{display: flex;
        justify-content: center;
        align-items:center;
-       padding-top: 140px;
+       padding-top: 150px;
        width:90%;
     }
 
@@ -279,8 +279,8 @@
     .immagine{width: 400px;
     height: 400px;}
 
-    .RegSuccesso{font-size:18px;
-       color:green;
+    .AccessoErrato{font-size:18px;
+       color:red;
     }
 
     form{font-size:19px;}
@@ -419,14 +419,14 @@
          transition: .3s;
     }
  
-    .immagine{width: 400px;
-       height: 250px;
+    .immagine{width: 350px;
+       height: 350px;
     }
  
     form{font-size:17px;}
 
-    .RegSuccesso{font-size:15px;
-        color:green;
+    .AccessoErrato{font-size:15px;
+        color:red;
      }
 
     #login{font-size: 27px;
@@ -573,11 +573,11 @@
     }
  
     .immagine{margin-top:30px;
-        width: 314px;
-       height: 200px;
+        width: 300px;
+       height: 300px;
     }
 
-    .RegSuccesso{margin-bottom: 80px;}
+    .AccessoErrato{margin-bottom: 80px;}
  
     form{font-size:19px;}
 

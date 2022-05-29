@@ -66,8 +66,33 @@ initial-scale=1.0">
             <div> 
         </center>
 
-        <div class="RegSuccesso">
+        <div class="AccessoErrato">
             <?php
+
+                if(isset($_POST['esegui'])){
+
+                    require_once('Connect.php');
+
+                    $username = $conn->real_escape_string($_POST['username']);
+                    $password = $conn->real_escape_string($_POST['password']);
+
+                    if($_SERVER["REQUEST_METHOD"] === "POST"){
+
+                        $query = "SELECT * FROM utenti WHERE username = '$username'";
+                        if($result = $conn->query($query)){
+                            if($result->num_rows == 1)
+                            $row = $result->fetch_array(MYSQLI_ASSOC);
+                            if(password_verify($password, $row['password'])){
+                                session_start();
+
+                                $_SESSION['id'] = $row['id'];
+                                $_SESSION['username'] = $row['username'];
+
+                                header("location: ")
+                            }
+                        }
+                    }
+                }
 
             ?>
         </div>

@@ -88,8 +88,9 @@ initial-scale=1.0">
                     $email= $conn->real_escape_string($_POST['email']);
                     $username = $conn->real_escape_string($_POST['username']);
                     $password = $conn->real_escape_string($_POST['password']);
+                    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-                    $query= "INSERT INTO utenti (email, username, password) VALUES ('$email', '$username', '$password')";
+                    $query= "INSERT INTO utenti (email, username, password) VALUES ('$email', '$username', '$hashed_password')";
 
                     if($conn->query($query) === true){
                         echo "<center><p>Registrazione effettuata con successo ✔</p></center>";
@@ -97,7 +98,6 @@ initial-scale=1.0">
                     else
                     echo "Errore durante la registrazione $query. " . $conn->error;
                 }
-
             ?>
         </div>
 
