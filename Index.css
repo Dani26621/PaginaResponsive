@@ -67,6 +67,7 @@
  
     input[type="text"]{font: 18px/27px "Lato", Arial, sans-serif; 
         color: #333; 
+        font-size:28px;
         width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
@@ -74,6 +75,7 @@
  
     input[type="password"]{font: 18px/27px "Lato", Arial, sans-serif; 
         color: #333; 
+        font-size:28px;
         width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
@@ -81,12 +83,13 @@
 
     input[type="email"]{font: 18px/27px "Lato", Arial, sans-serif; 
         color: #333; 
+        font-size:28px;
         width: 100%; 
         box-sizing: border-box; 
         letter-spacing: 1px;
     }
  
-    form{font-size:29px;}
+    form{font-size:32px;}
 
     :focus{outline: none;}
  
@@ -117,7 +120,7 @@
         background: #da5767;
         color: white;
         font-weight: bold;
-        font-size: 17px;
+        font-size: 22px;
         border: 2px solid #da5767;
         border-radius:5px;
     }
@@ -127,9 +130,13 @@
         border-color: #df8c96;
         transition: .3s;
     }
+
+    .RegSuccesso{font-size:26px;
+        color:green;
+     }
  
-    .immagine{width: 800px;
-    height: 500px;}
+    .immagine{width: 850px;
+    height: 550px;}
 
     #register{font-size: 40px;
     color:#549da0;}
@@ -197,7 +204,7 @@
     .Contenitore{display: flex;
        justify-content: center;
        align-items:center;
-       padding-top: 100px;
+       padding-top: 80px;
        width:90%;
     }
 
@@ -271,6 +278,9 @@
     .immagine{width: 500px;
     height: 300px;}
 
+    .RegSuccesso{font-size:18px;
+       color:green;
+    }
 
     form{font-size:19px;}
 
@@ -412,8 +422,11 @@
        height: 250px;
     }
  
- 
     form{font-size:17px;}
+
+    .RegSuccesso{font-size:15px;
+        color:green;
+     }
 
     #register{font-size: 27px;
         color:#549da0;
@@ -494,7 +507,6 @@
         justify-content:center;
         align-content: center;
         align-items: center;
-        margin-bottom: 30px;
     }
  
     input[type="text"]{font: 12px/21px "Lato", Arial, sans-serif; 
@@ -549,7 +561,6 @@
         color: white;
         font-weight: bold;
         font-size:10px;
-        margin-bottom:8px;
         border: 2px solid #da5767;
         border-radius:5px;
     }
@@ -560,10 +571,12 @@
         transition: .3s;
     }
  
-    .immagine{
+    .immagine{margin-top:30px;
         width: 314px;
        height: 200px;
     }
+
+    .RegSuccesso{margin-bottom: 80px;}
  
     form{font-size:19px;}
 

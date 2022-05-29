@@ -21,7 +21,7 @@ initial-scale=1.0">
                 </div>
                 <img src="https://img.icons8.com/emoji/80/000000/sandwich-emoji.png"/>
             </div>
-            <a href="#index.php"><ion-icon name="log-in" id= "login"></ion-icon><br><b id="NomeL">login</b></a>
+            <a href="login.php"><ion-icon name="log-in" id= "login"></ion-icon><br><b id="NomeL">login</b></a>
             <a href="index.php"><ion-icon name="person-add" id= "register"></ion-icon><br><b id="NomeR">Registrati</b></a>
         </nav>
 
@@ -39,15 +39,9 @@ initial-scale=1.0">
 
                 <div class="ContenitoreForm">
 
-                    <form action="index.php" method="POST" onsubmit="CreaAccount()">
+                    <form action="login.php" method="POST">
                         <center>
-                            <h2>Registrati</h2>
-
-                            <div class="col-3">
-                                <input type="email" class="effect-1" name="email" id ="email" placeholder="Inserire email" required>
-                                <span class="focus-border"></span>
-                            </div>
-                            <br><br>
+                            <h2>Accedi</h2>
 
                             <div class="col-3">
                                 <input type="text" class="effect-1" name="username" id ="username" placeholder="Inserire username" required>
@@ -61,42 +55,19 @@ initial-scale=1.0">
                             </div>
                             <br><br>
 
-                            <div class="col-3">
-                                <input type="password" class="effect-1" //aggiungereNamePassword id ="password2" placeholder="Conferma password" //aggiungereRequired>
-                                <span class="focus-border"></span>
-                            </div>
-                            <br><br>
-
                             <input type="submit" value="Crea account" name="esegui" class="btn btn-primary">
                             <input type="reset" value="Resetta campi"  class="btn btn-primary">
                         </center>   
                     </form>
                 </div>
                 
-                <img src="Register.png" class="immagine">
+                <img src="Accedi.png" class="immagine">
 
             <div> 
         </center>
 
         <div class="RegSuccesso">
             <?php
-
-                if(isset($_POST['esegui'])){
-
-                    require_once('Connect.php');
-
-                    $email= $conn->real_escape_string($_POST['email']);
-                    $username = $conn->real_escape_string($_POST['username']);
-                    $password = $conn->real_escape_string($_POST['password']);
-
-                    $query= "INSERT INTO utenti (email, username, password) VALUES ('$email', '$username', '$password')";
-
-                    if($conn->query($query) === true){
-                        echo "<center><p>Registrazione effettuata con successo ✔</p></center>";
-                    }
-                    else
-                    echo "Errore durante la registrazione $query. " . $conn->error;
-                }
 
             ?>
         </div>
