@@ -40,6 +40,7 @@ initial-scale=1.0">
             <?php
                 echo "Bentornato " . $_SESSION["username"]."!";
             ?>
+           <a href="logout.php"><ion-icon name="log-out" id="logout"></ion-icon><br><b id="NomeLO">logout</b></a>
         </div>
 
 

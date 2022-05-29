@@ -133,6 +133,7 @@
 
     .AccessoErrato{font-size:26px;
         color:red;
+        margin-top:50px;
     }
  
     .immagine{width: 550px;
@@ -281,6 +282,7 @@
 
     .AccessoErrato{font-size:18px;
        color:red;
+       margin-top:40px;
     }
 
     form{font-size:19px;}
@@ -427,7 +429,7 @@
 
     .AccessoErrato{font-size:15px;
         color:red;
-        -top:40px;
+        margin-top:40px;
     }
 
     #login{font-size: 27px;
