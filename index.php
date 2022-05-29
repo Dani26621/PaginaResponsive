@@ -21,7 +21,7 @@ initial-scale=1.0">
                 </div>
                 <img src="https://img.icons8.com/emoji/80/000000/sandwich-emoji.png"/>
             </div>
-            <a href="#index.php"><ion-icon name="log-in" id= "login"></ion-icon><br><b id="NomeL">login</b></a>
+            <a href="login.php"><ion-icon name="log-in" id= "login"></ion-icon><br><b id="NomeL">login</b></a>
             <a href="index.php"><ion-icon name="person-add" id= "register"></ion-icon><br><b id="NomeR">Registrati</b></a>
         </nav>
 

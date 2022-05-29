@@ -55,7 +55,7 @@ initial-scale=1.0">
                             </div>
                             <br><br>
 
-                            <input type="submit" value="Crea account" name="esegui" class="btn btn-primary">
+                            <input type="submit" value="Accedi" name="esegui" class="btn btn-primary">
                             <input type="reset" value="Resetta campi"  class="btn btn-primary">
                         </center>   
                     </form>
