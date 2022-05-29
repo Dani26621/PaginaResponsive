@@ -427,7 +427,8 @@
 
     .AccessoErrato{font-size:15px;
         color:red;
-     }
+        -top:40px;
+    }
 
     #login{font-size: 27px;
         color:#549da0;

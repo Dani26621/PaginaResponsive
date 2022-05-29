@@ -80,18 +80,25 @@ initial-scale=1.0">
 
                         $query = "SELECT * FROM utenti WHERE username = '$username'";
                         if($result = $conn->query($query)){
-                            if($result->num_rows == 1)
-                            $row = $result->fetch_array(MYSQLI_ASSOC);
-                            if(password_verify($password, $row['password'])){
-                                session_start();
-
-                                $_SESSION['id'] = $row['id'];
-                                $_SESSION['username'] = $row['username'];
-
-                                header("location: ")
-                            }
-                        }
+                            if($result->num_rows == 1){
+                                $row = $result->fetch_array(MYSQLI_ASSOC);
+                                if(password_verify($password, $row['password'])){
+                                    session_start();
+    
+                                    $_SESSION['loggato'] = true;
+                                    $_SESSION['id'] = $row['id'];
+                                    $_SESSION['username'] = $row['username'];
+    
+                                    header("location: Account.php");
+                                }else
+                                echo "<center>La password non è corretta ✘</center>";
+                            }else 
+                            echo "<center>Non sono presenti account con questo username ✘</center>";
+                        }else
+                        echo "<center>Errore in fase di login ✘</center>";
                     }
+
+                    mysqli_close($conn);
                 }
 
             ?>

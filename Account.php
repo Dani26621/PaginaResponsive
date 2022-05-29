@@ -1,3 +1,12 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION['loggato']) || $_SESSION['loggato'] !== true){
+        header("location: login.php");
+        exit;
+    }
+?>
+
 <meta name="viewport" content="width=device-width, 
 initial-scale=1.0">  
 
@@ -27,7 +36,12 @@ initial-scale=1.0">
             <a href="Settings.html"><ion-icon name="settings" id="setting"></ion-icon><br><b id="NomeS">settings</b></a>
         </nav>
 
-        <img src ="">
+        <div class="Benvenuto">
+            <?php
+                echo "Bentornato " . $_SESSION["username"]."!";
+            ?>
+        </div>
+
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
