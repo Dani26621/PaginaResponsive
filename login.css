@@ -133,7 +133,7 @@
 
     .RegSuccesso{font-size:26px;
         color:green;
-     }
+    }
  
     .immagine{width: 850px;
     height: 550px;}
@@ -205,7 +205,7 @@
     .Contenitore{display: flex;
        justify-content: center;
        align-items:center;
-       padding-top: 80px;
+       padding-top: 140px;
        width:90%;
     }
 
@@ -276,8 +276,8 @@
         transition: .3s;
     }
 
-    .immagine{width: 500px;
-    height: 300px;}
+    .immagine{width: 400px;
+    height: 400px;}
 
     .RegSuccesso{font-size:18px;
        color:green;
