@@ -48,15 +48,27 @@
       font-size: 24px;
     }
 
-    #user{font-size: 40px;
-    color:#549da0;}
-      
-    #setting,#food,#home{font-size: 40px;}
-    
-    #home:hover{color:#549da0; transition: 0.5s}
-    #food:hover{color:#549da0; transition: 0.5s}
-    #user:hover{color:#549da0; transition: 0.5s}
-    #setting:hover{color:#549da0; transition: 0.5s}
+    .Benvenuto{padding-top: 200px;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+  }
+
+  #NomeLO,#logout{color:black;}
+
+  #logout:hover{color:#549da0;
+  transition: 0.5s;}
+
+  #user{font-size: 30px;
+    color:#549da0;
+  }
+
+  #logout,#setting,#food,#home{font-size: 30px;}
+  
+  #home:hover{color:#549da0;}
+  #food:hover{color:#549da0;}
+  #user:hover{color:#549da0;}
+  #setting:hover{color:#549da0;}
 }
 
 @media screen and (max-width: 1540px) {
@@ -107,10 +119,10 @@
       font-size: 17px;
     }
 
-    .Benvenuto{padding-top: 120px;
-        display:flex;
-        justify-content:space-around;
-        align-items:center;
+    .Benvenuto{padding-top: 200px;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
     }
   
     #NomeLO,#logout{color:black;}
@@ -168,6 +180,17 @@
     margin-bottom:0px;}
   
     .Intestazione1{display: none;}
+
+    .Benvenuto{padding-top: 20px;
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+    }
+
+    #NomeLO,#logout{color:black;}
+
+    #logout:hover{color:#549da0;
+    transition: 0.5s;}
   
     #home,#food,#user,#setting{font-size: 23px;}
   
