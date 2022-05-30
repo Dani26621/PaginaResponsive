@@ -67,7 +67,7 @@ initial-scale=1.0">
         </center>
 
         <div class="AccessoErrato">
-            <?php
+            <?php error_reporting(E_ERROR | E_PARSE);
 
                 if(isset($_POST['esegui'])){
 
@@ -89,7 +89,8 @@ initial-scale=1.0">
                                     $_SESSION['id'] = $row['id'];
                                     $_SESSION['username'] = $row['username'];
     
-                                    header("location: Account.php");
+                                    echo "<center><p style='color:green'>Accesso in corso...<br><img class='spinner' src='spinner.gif'></p></center>";
+                                    header( "refresh:4; url=Account.php" );
                                 }else
                                 echo "<center>La password non è corretta ✘</center>";
                             }else 

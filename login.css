@@ -135,6 +135,8 @@
         color:red;
         margin-top:50px;
     }
+
+    .spinner{width:55px;}
  
     .immagine{width: 550px;
     height: 550px;}
@@ -285,6 +287,8 @@
        margin-top:40px;
     }
 
+    .spinner{width: 35px;}
+
     form{font-size:19px;}
 
     #login{font-size: 30px;
@@ -431,6 +435,8 @@
         color:red;
         margin-top:40px;
     }
+
+    .spinner{width:30px;}
 
     #login{font-size: 27px;
         color:#549da0;

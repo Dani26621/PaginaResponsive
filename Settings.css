@@ -91,7 +91,9 @@
     border-bottom:1px solid lightgrey;
   }
 
-  .Contattaci:hover{background-color: lightgrey;}
+  .Contattaci:hover{background-color: lightgrey;
+    transition: 0.5s;
+  }
  
   .Contattaci div{background-color: rgb(58, 192, 58);
     color:white;
@@ -109,7 +111,9 @@
     border-bottom:1px solid lightgrey
   }
 
-  .Valutaci:hover{background-color: lightgrey;}
+  .Valutaci:hover{background-color: lightgrey;
+    transition: 0.5s;
+  }
      
   .Valutaci div{background-color: lightsalmon;
     color:yellow;
@@ -127,7 +131,9 @@
   }
 
   .Versione:hover{background-color: lightgrey;
-  border-radius:0px 0px 10px 10px;}
+    transition: 0.5s;
+    border-radius:0px 0px 10px 10px;
+  }
          
   .Versione div{background-color: white;
     color:#0a7aff;

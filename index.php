@@ -44,7 +44,8 @@ initial-scale=1.0">
                             <h2>Registrati</h2>
 
                             <div class="col-3">
-                                <input type="email" class="effect-1" name="email" id ="email" placeholder="Inserire email" required>
+                                <input type="email" class="effect-1" name="email" pattern=".+@giua.edu.it" id ="email" placeholder="Inserire email" 
+                                title="Il nuovo utente dovrà essere in possesso di un'email appartenente al dominio '@giua.edu.it' " required>
                                 <span class="focus-border"></span>
                             </div>
                             <br><br>
@@ -101,11 +102,12 @@ initial-scale=1.0">
 
                     if($conn->query($query) === true){
                         echo "<center><p style=''>Registrazione effettuata con successo ✔<br>
-                        Ti stiamo indirizzando al login<br><img class='spinner' src='spinner.gif'> </p></center>";
-                        header("location: login.php");
+                        <img class='spinner' src='spinner.gif'></p></center>";
                     }
                     else
-                    echo "Errore durante la registrazione $query. " . $conn->error;             
+                    echo "Errore durante la registrazione $query. " . $conn->error;   
+                    
+                    header( "refresh:4; url=login.php" );
                 }
             ?>
         </div>
