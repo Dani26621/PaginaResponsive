@@ -48,10 +48,11 @@
       font-size: 24px;
     }
 
-    .Benvenuto{padding-top: 200px;
+    .Benvenuto{padding-top: 180px;
       display:flex;
       justify-content:space-around;
       align-items:center;
+      font-size:x-large;
   }
 
   #NomeLO,#logout{color:black;}
@@ -59,11 +60,11 @@
   #logout:hover{color:#549da0;
   transition: 0.5s;}
 
-  #user{font-size: 30px;
+  #user{font-size: 40px;
     color:#549da0;
   }
 
-  #logout,#setting,#food,#home{font-size: 30px;}
+  #logout,#setting,#food,#home{font-size: 40px;}
   
   #home:hover{color:#549da0;}
   #food:hover{color:#549da0;}
@@ -119,10 +120,11 @@
       font-size: 17px;
     }
 
-    .Benvenuto{padding-top: 200px;
+    .Benvenuto{padding-top: 120px;
       display:flex;
       justify-content:space-around;
       align-items:center;
+      font-size:large;
     }
   
     #NomeLO,#logout{color:black;}
@@ -136,10 +138,10 @@
 
     #logout,#setting,#food,#home{font-size: 30px;}
     
-    #home:hover{color:#549da0;}
-    #food:hover{color:#549da0;}
-    #user:hover{color:#549da0;}
-    #setting:hover{color:#549da0;}
+    #home:hover{color:#549da0; transition: 0.5s;}
+    #food:hover{color:#549da0; transition: 0.5s;}
+    #user:hover{color:#549da0; transition: 0.5s;}
+    #setting:hover{color:#549da0; transition: 0.5s;}
 }
 
 @media screen and (max-width: 1024px) {

@@ -321,10 +321,10 @@
     
   #food,#user,#home{font-size: 40px;}
   
-  #home:hover{color:#549da0; transition: 0.5s}
-  #food:hover{color:#549da0; transition: 0.5s}
-  #user:hover{color:#549da0; transition: 0.5s}
-  #setting:hover{color:#549da0; transition: 0.5s}
+  #home:hover{color:#549da0; transition: 0.5s;}
+  #food:hover{color:#549da0; transition: 0.5s;}
+  #user:hover{color:#549da0; transition: 0.5s;}
+  #setting:hover{color:#549da0; transition: 0.5s;}
 }
 
 @media screen and (max-width: 1540px) {
