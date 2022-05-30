@@ -294,10 +294,10 @@
   
   #food,#user,#setting{font-size: 30px;}
 
-  #home:hover{color:#549da0;}
-  #food:hover{color:#549da0;}
-  #user:hover{color:#549da0;}
-  #setting:hover{color:#549da0;}
+  #home:hover{color:#549da0; transition: 0.5s;}
+  #food:hover{color:#549da0; transition: 0.5s;}
+  #user:hover{color:#549da0; transition: 0.5s;}
+  #setting:hover{color:#549da0; transition: 0.5s;}
 }
 
 @media screen and (max-width: 1024px) {

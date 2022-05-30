@@ -133,7 +133,9 @@
 
     .RegSuccesso{font-size:26px;
         color:green;
-     }
+    }
+
+    .spinner{width:55px;}
  
     .immagine{width: 850px;
     height: 550px;}
@@ -204,7 +206,7 @@
     .Contenitore{display: flex;
        justify-content: center;
        align-items:center;
-       padding-top: 80px;
+       padding-top: 45px;
        width:90%;
     }
 
@@ -282,6 +284,8 @@
        color:green;
     }
 
+    .spinner{width: 35px;}
+
     form{font-size:19px;}
 
     #register{font-size: 30px;
@@ -346,7 +350,7 @@
     .Contenitore{display: flex;
         justify-content: center;
         align-items:center;
-        padding-top: 100px;
+        padding-top: 80px;
         width:90%;
     }
  
@@ -427,6 +431,8 @@
     .RegSuccesso{font-size:15px;
         color:green;
      }
+
+     .spinner{width:30px;}
 
     #register{font-size: 27px;
         color:#549da0;

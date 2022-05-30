@@ -39,7 +39,7 @@ initial-scale=1.0">
 
                 <div class="ContenitoreForm">
 
-                    <form action="index.php" method="POST" onsubmit="CreaAccount()">
+                    <form action="index.php" method="POST" id="form">
                         <center>
                             <h2>Registrati</h2>
 
@@ -56,18 +56,21 @@ initial-scale=1.0">
                             <br><br>
 
                             <div class="col-3">
-                                <input type="password" class="effect-1" name="password" id ="password1" placeholder="Inserire password" required>
+                                <input type="password" class="effect-1" name="password" id ="password1" placeholder="Inserire password" 
+                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Deve contenere almeno un numero, una lettera maiuscola
+                                e minuscola e almeno 8 o più caratteri" required>
                                 <span class="focus-border"></span>
                             </div>
                             <br><br>
 
                             <div class="col-3">
-                                <input type="password" class="effect-1" //aggiungereNamePassword id ="password2" placeholder="Conferma password" //aggiungereRequired>
+                                <input type="password" class="effect-1" name="password" id ="password2" placeholder="Conferma password" 
+                                onkeyup="validate_password()" required>
                                 <span class="focus-border"></span>
                             </div>
                             <br><br>
 
-                            <input type="submit" value="Crea account" name="esegui" class="btn btn-primary">
+                            <input type="submit" value="Crea account" id="create" name="esegui" class="btn btn-primary">
                             <input type="reset" value="Resetta campi"  class="btn btn-primary">
                         </center>   
                     </form>
@@ -77,6 +80,10 @@ initial-scale=1.0">
 
             <div> 
         </center>
+
+        <center>
+            <span id="wrong_pass_alert"></span>
+        <center>
 
         <div class="RegSuccesso">
             <?php
@@ -93,16 +100,36 @@ initial-scale=1.0">
                     $query= "INSERT INTO utenti (email, username, password) VALUES ('$email', '$username', '$hashed_password')";
 
                     if($conn->query($query) === true){
-                        echo "<center><p>Registrazione effettuata con successo ✔</p></center>";
+                        echo "<center><p style=''>Registrazione effettuata con successo ✔<br>
+                        Ti stiamo indirizzando al login<br><img class='spinner' src='spinner.gif'> </p></center>";
+                        header("location: login.php");
                     }
                     else
-                    echo "Errore durante la registrazione $query. " . $conn->error;
+                    echo "Errore durante la registrazione $query. " . $conn->error;             
                 }
             ?>
         </div>
 
         <script>
+            var password1 = document.getElementById("password1").value;
+            var password2 = document.getElementById("password2").value;
 
+            function validate_password() {
+ 
+                var pass = document.getElementById('password1').value;
+                var confirm_pass = document.getElementById('password2').value;
+                if (pass != confirm_pass) {
+                    document.getElementById('wrong_pass_alert').style.color = 'red';
+                    document.getElementById('wrong_pass_alert').innerHTML= 'Le password non corrispondono ✘';
+                    document.getElementById('create').disabled = true;
+                    document.getElementById('create').style.opacity = (0.4);
+                } else {
+                    document.getElementById('wrong_pass_alert').style.color = 'green';
+                    document.getElementById('wrong_pass_alert').innerHTML = 'Le password corrispondono ✔';
+                    document.getElementById('create').disabled = false;
+                    document.getElementById('create').style.opacity = (1);
+                }
+            }
         </script>
 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

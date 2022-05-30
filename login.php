@@ -79,9 +79,9 @@ initial-scale=1.0">
                     if($_SERVER["REQUEST_METHOD"] === "POST"){
 
                         $query = "SELECT * FROM utenti WHERE username = '$username'";
-                        if($result = $conn->query($query)){
-                            if($result->num_rows == 1){
-                                $row = $result->fetch_array(MYSQLI_ASSOC);
+                        if($result = mysqli_query($conn, $query)){
+                            if(mysqli_num_rows($result) == 1){
+                                $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                                 if(password_verify($password, $row['password'])){
                                     session_start();
     
